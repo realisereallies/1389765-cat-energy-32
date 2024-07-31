@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Лиза Давыдова](https://up.htmlacademy.ru/adaptive/32/user/1389765).
+* Студент: [Лиза Давыдова.](https://up.htmlacademy.ru/adaptive/32/user/1389765).
 * Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
 
 ---
