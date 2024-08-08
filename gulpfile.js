@@ -7,7 +7,6 @@ import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import postUrl from 'postcss-url';
- //import lightningcss from 'postcss-lightningcss';
 import { createGulpEsbuild } from 'gulp-esbuild';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
 import sharp from 'gulp-sharp-responsive';
@@ -63,11 +62,6 @@ export function processStyles () {
           multi: true,
         },
       ]),
-      //lightningcss({
-  //  lightningcssOptions: {
-       //   minify: !isDevelopment,
-    //    },
- //     })
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());
