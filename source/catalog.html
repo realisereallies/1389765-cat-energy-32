@@ -11,8 +11,9 @@
 
 <body class="page__body">
   <header class="main-header">
-    <img class="main-header__logo-image" src="images/logo-mobile.svg" alt="Логотип с котенком Кет Энерджи" width="33" height="38">
-    <a class="main-header__logo-text" href="#">
+    <a class="main-header__logo-image" href="index.html"><img src="images/logo-mobile.svg" alt="Логотип с котенком Кет Энерджи" width="33" height="38">
+    </a>
+    <a class="main-header__logo-text" href="index.html">
       <img class="main-header__logo-text" src="images/logo-text.svg" alt="Логотип сайта кет Энерджи" width="101" height="18">
     </a>
     <nav class="main-nav">
@@ -37,7 +38,12 @@
       <h1>Каталог продукции</h1>
       <ul class="products-catalog__catalog-list">
         <li class="products-catalog__list-item">
-          <img src="images/chicken-small.png" alt="" width="68" height="86">
+          <picture>
+            <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x">
+            <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.png 1x, catalog-1-tablet@2x.png 2x">
+            <img src="images/catalog-1-mobile@1x.png" srcset="images/catalog-1-mobile@2x.png" alt="продукт магазина" width="68" height="86">
+          </picture>
+
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 500 г</h3>
             <p class="products-catalog__description weight-title">Масса</p>
@@ -50,7 +56,11 @@
           <button class="catalog-button button" type="button">Заказать</button>
         </li>
         <li class="products-catalog__list-item">
-          <img src="images/chicken-big.png" alt="" width="84" height="100">
+          <picture>
+            <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-2-tablet@1x.png 1x, images/catalog-2-tablet@2x.png 2x">
+            <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.png 1x, catalog-2-tablet@2x.png 2x">
+            <img src="images/catalog-2-mobile@1x.png" srcset="images/catalog-2-mobile@2x.png" alt="продукт магазина" width="84" height="100">
+          </picture>
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 1000 г</h3>
             <p class="weight-title products-catalog__description">Масса</p>
@@ -63,7 +73,11 @@
           <button class="catalog-button button" type="button">Заказать</button>
         </li>
         <li class="products-catalog__list-item">
-          <img src="images/fish-small.png" alt="" width="68" height="78">
+          <picture>
+            <source width="163" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x">
+            <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.png 1x, catalog-3-tablet@2x.png 2x">
+            <img src="images/catalog-3-mobile@1x.png" srcset="images/catalog-3-mobile@2x.png" alt="продукт магазина" width="68" height="86">
+          </picture>
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 500 г</h3>
             <p class="weight-title products-catalog__description">Масса</p>
@@ -76,7 +90,11 @@
           <button class="catalog-button button" type="button">Заказать</button>
         </li>
         <li class="products-catalog__list-item">
-          <img src="images/fish-big.png" alt="" width="84" height="100">
+          <picture>
+            <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-4-tablet@1x.png 1x, images/catalog-4-tablet@2x.png 2x">
+            <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.png 1x, catalog-4-tablet@2x.png 2x">
+            <img src="images/catalog-4-mobile@1x.png" srcset="images/catalog-4-mobile@2x.png" alt="продукт магазина" width="84" height="100">
+          </picture>
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 1000 г</h3>
             <p class="weight-title products-catalog__description">Масса</p>
@@ -89,7 +107,11 @@
           <button class="catalog-button button" type="button">Заказать</button>
         </li>
         <li class="products-catalog__list-item">
-          <img src="images/buckwheat-small.png" alt="" width="68" height="78">
+          <picture>
+            <source width="163" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x">
+            <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.png 1x, catalog-5-tablet@2x.png 2x">
+            <img src="images/catalog-5-mobile@1x.png" srcset="images/catalog-5-mobile@2x.png" alt="продукт магазина" width="68" height="86">
+          </picture>
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 500 г</h3>
             <p class="weight-title products-catalog__description">Масса</p>
@@ -102,7 +124,11 @@
           <button class="catalog-button button" type="button">Заказать</button>
         </li>
         <li class="products-catalog__list-item">
-          <img src="images/buckwheat-big.png" alt="" width="84" height="100">
+          <picture>
+            <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-6-tablet@1x.png 1x, images/catalog-6-tablet@2x.png 2x">
+            <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.png 1x, catalog-6-tablet@2x.png 2x">
+            <img src="images/catalog-6-mobile@1x.png" srcset="images/catalog-6-mobile@2x.png" alt="продукт магазина" width="84" height="100">
+          </picture>
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 1000 г</h3>
             <p class="weight-title products-catalog__description">Масса</p>
@@ -115,7 +141,11 @@
           <button class="catalog-button button" type="button">Заказать</button>
         </li>
         <li class="products-catalog__list-item">
-          <img src="images/rice-small.png" alt="" width="72" height="84">
+          <picture>
+            <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x">
+            <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="images/catalog-7-tablet@1x.png 1x, catalog-7-tablet@2x.png 2x">
+            <img src="images/catalog-7s-mobile@1x.png" srcset="images/catalog-7-mobile@2x.png" alt="продукт магазина" width="72" height="84">
+          </picture>
           <div class="products-catalog__inner">
             <h3 class="products-catalog__item-title catalog-title ">Cat Energy Slim 500 г</h3>
             <p class="weight-title products-catalog__description">Масса</p>
@@ -193,12 +223,16 @@
         <h2 class="contacts-title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts-discription">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img src="images/location.png" alt="Отметка на карте, магазин Кет Энерджи" width="320" height="262">
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-deskop@1x.png 1x, images/location-deskop@2x.png 2x">
+        <source width="786" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+        <img class="contacts-map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png" alt="Отметка на карте, магазин Кет Энерджи" width="320" height="362">
+      </picture>>
     </section>
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo-text" href="#">
-      <img class="main-footer_logo-text" src="images/logo-text.svg" alt="Логотип сайта кет Энерджи" width="128" height="28">
+      <img class="main-footer_logo-text" src="#" alt="Логотип сайта кет Энерджи" width="128" height="28">
     </a>
     <ul class="social-list">
       <li class="social-list__item">
