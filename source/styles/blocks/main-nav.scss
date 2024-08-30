@@ -10,3 +10,23 @@
   line-height: 20px;
   text-align: left;
 }
+
+.main-nav__toggle {
+  background-image: url("../../icons/stack.svg#icon-menue");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  border: none;
+  margin: 0;
+  padding: 12px;
+  cursor: pointer;
+  position: absolute;
+  left: 200px;
+  top: -40px;
+}
+
+.main-nav {
+  position: relative;
+}

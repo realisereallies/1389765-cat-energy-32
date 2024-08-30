@@ -14,3 +14,37 @@
   line-height: 18px;
   text-align: left;
 }
+
+.features__list-item::before {
+  content: "";
+  background-color: $based-color-green;
+  background-position: center center;
+  background-size: contain;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.features__list-item-leaf::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+}
+
+.features__list-item-wash::before {
+  background-image: url("../../icons/stack.svg#wash");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+}
+
+.features__list-item-eat::before {
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+}
+
+.features__list-item-alarm::before {
+  background-image: url("../../icons/stack.svg#alarm");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+}

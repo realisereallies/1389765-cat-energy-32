@@ -20,7 +20,7 @@
   text-align: left;
 }
 
-.card__button {
+.card__link {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -28,4 +28,43 @@
   line-height: 16px;
   text-align: center;
   color: $based-color-black;
+}
+
+.card__link::after {
+  content: "";
+  background-color: rgb(0, 0, 0, 0);
+  background-image: url("../../icons/stack.svg#arrow");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 10px;
+  margin-left: 15px;
+  transition: all 0.3s linear;
+  display: block;
+}
+
+.card__link::after:is(:hover, :active, :focus)::after {
+  transform: scaleX(1.35px);
+  transform-origin: left;
+}
+
+.card::before {
+  content: "";
+  background-color: rgb(0, 0, 0, 0);
+  background-position: center center;
+  background-size: contain;
+  display: block;
+}
+
+.fit-cat::before {
+  background-image: url("../../icons/stack.svg#fit-cat");
+  width: 50px;
+  height: 53px;
+}
+
+.strong-cat::before {
+  background-image: url("../../icons/stack.svg#fat-cat");
+  width: 67px;
+  height: 50px;
 }
