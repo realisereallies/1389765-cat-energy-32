@@ -1,0 +1,18 @@
+.container {
+  width: 280px;
+  padding: 13 20px 0;
+}
+
+@media (min-width: 786px) {
+  .container {
+    width: 708px;
+    padding: 25px 30px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 55px 64px 0;
+  }
+}

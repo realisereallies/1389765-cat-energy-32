@@ -1,3 +1,34 @@
 .main-footer {
   background-color: $based-color-gray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__inner {
+  display: flex;
+}
+
+.main-footer__logo-text {
+  @media (min-width: $tablet-width) {
+
+    padding-top: 8px;
+  }
+}
+
+.main-footer__academy-discription {
+  margin-right: 113px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }

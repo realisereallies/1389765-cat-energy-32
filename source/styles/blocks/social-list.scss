@@ -1,5 +1,9 @@
 .social-list {
   list-style: none;
+  display: flex;
+  width: 132px;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .social-list__item::before {

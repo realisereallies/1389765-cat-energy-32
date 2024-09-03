@@ -48,3 +48,20 @@
   background-size: 26px 31px;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 786px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__list-item {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__list {
+    display: flex;
+  }
+}

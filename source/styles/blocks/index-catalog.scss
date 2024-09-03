@@ -3,3 +3,9 @@
 .index-catalog_cards {
   list-style: none;
 }
+
+@media (min-width: 1200px) {
+  .index-catalog__card {
+    display: flex;
+  }
+}
