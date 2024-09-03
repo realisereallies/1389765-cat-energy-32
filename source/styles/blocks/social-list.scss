@@ -59,3 +59,30 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.social-list__item::before {
+  content: "";
+  background-position: center center;
+  background-size: contain;
+  display: block;
+  width: 28px;
+  height: 22px;
+}
+
+.social-vk::before {
+  background-image: url("../../icons/stack.svg#vk");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-yt::before {
+  background-image: url("../../icons/stack.svg#yt");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-tg::before {
+  background-image: url("../../icons/stack.svg#tg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
