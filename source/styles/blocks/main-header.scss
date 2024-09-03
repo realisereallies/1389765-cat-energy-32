@@ -1,3 +1,43 @@
+
 .main-header__logo-image {
   text-decoration: none;
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 50px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.main-header__logo-text {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    padding: 16px 0 16px 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+  }
 }
