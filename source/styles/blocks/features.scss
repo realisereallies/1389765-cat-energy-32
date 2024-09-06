@@ -45,6 +45,7 @@
   padding-bottom: 32px;
 }
 
+
 .features__item-decsription {
 .features__item-decsription {
   font-family: "Lato", sans-serif;
@@ -64,12 +65,20 @@
 }
 
 .features__list-item {
-  width: 280px;
   padding: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 200px;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 31px 0;
   }
   width: 200px;
   display: inline-block;
