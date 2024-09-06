@@ -1,4 +1,5 @@
 .main-footer {
+  padding-top: 40px;
   background-color: $based-color-gray;
 
   @media (min-width: $tablet-width) {
@@ -14,14 +15,41 @@
   }
 }
 
+.footer-wrapper {
+
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+  }
+}
+
 .main-footer__inner {
   display: flex;
 }
 
 .main-footer__logo-text {
-  @media (min-width: $tablet-width) {
+  width: 128px;
+  height: 24px;
+  margin: auto;
+  display: block;
 
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    height: 24px;
     padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

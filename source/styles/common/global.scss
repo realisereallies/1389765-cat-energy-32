@@ -5,11 +5,23 @@
   box-sizing: border-box;
 }
 
-body {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
   font-family: "Lato", sans-serif;
   color: $based-color-text;
   background-color: #ffffff;
 }
+
 
 .visually-hidden {
   display: none;

@@ -1,9 +1,16 @@
 .hero {
   position: relative;
 
+  @media (max-width: 785px) {
+    max-width: 320px;
+    margin: auto;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     background-image: none;
+    width: 786px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,6 +18,8 @@
     background-color: $based-color-green;
     background-repeat: no-repeat;
     background-size: 320px 302px;
+    width: 1220px;
+    margin: auto;
   }
 }
 
@@ -45,6 +54,20 @@
   line-height: 36px;
   text-align: center;
   color: $based-color-white;
+
+  @media (min-width: $tablet-width) {
+    color: $based-color-black;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    width: 500px;
+    margin-left: 120px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
   margin: 0;
   padding-top: 27px;
 
@@ -70,6 +93,38 @@
   line-height: 14px;
   color: $based-color-white;
   text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $based-color-black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 120px;
+  }
+}
+
+.hero__button {
+  width: 280px;
+  padding: 10px 0;
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 70px;
+  }
   margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;

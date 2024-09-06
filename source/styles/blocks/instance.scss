@@ -1,10 +1,6 @@
 .instance {
-  background-color: $based-color-gray;
-  padding: 25px 20px;
-
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-
     border-top: 1px solid #e6e6e6;
   }
 
@@ -13,15 +9,33 @@
   }
 }
 
-.instance__main-inner {
+.instance__position {
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 786px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    width: 100%;
+  }
+}
+
+.instance__main-inner {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    background-color: $based-color-gray;
   }
 }
 
 .instance__wrapper {
   @media (min-width: $desktop-width) {
-    background-color: $based-color-gray;
+    width: 1220px;
+    margin: auto;
   }
 }
 
@@ -37,6 +51,11 @@
     padding-bottom: 76px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
+    margin: 0;
+  }
 }
 
 .instance__discription {
@@ -45,6 +64,7 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -63,6 +83,7 @@
   gap: 0 20px;
   padding: 0;
   margin: 0;
+  width: 280px;
 
 
   @media (min-width: $tablet-width) {
@@ -107,6 +128,22 @@
     line-height: 12px;
     text-align: center;
   }
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 .instance__list-discription {
@@ -124,6 +161,7 @@
   line-height: 20px;
   text-align: center;
   color: $based-color-black;
+  width: 188px;
 
   @media (min-width: $tablet-width) {
     font-family: "Oswald", sans-serif;
@@ -132,7 +170,7 @@
     line-height: 20px;
     text-align: right;
     display: inline;
-    margin-left: auto;
+    margin-left: 167px;
     width: 172px;
     padding-top: 30px;
 
