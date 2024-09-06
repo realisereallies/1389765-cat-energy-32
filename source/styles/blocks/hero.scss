@@ -1,9 +1,16 @@
 .hero {
   position: relative;
 
+  @media (max-width: 785px) {
+    max-width: 320px;
+    margin: auto;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     background-image: none;
+    width: 786px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,6 +18,8 @@
     background-color: $based-color-green;
     background-repeat: no-repeat;
     background-size: 320px 302px;
+    width: 1220px;
+    margin: auto;
   }
 }
 

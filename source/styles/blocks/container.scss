@@ -1,23 +1,15 @@
 .container {
   position: relative;
-  margin: auto;
+}
 
-  @media (min-width: 320px) {
-    margin-top: 12px;
-    width: 320px;
+@media (min-width: $tablet-width) {
+  .container {
+    padding-top: 25px;
   }
 }
 
-@media (min-width: 786px) {
+@media (min-width: $desktop-width) {
   .container {
-    width: 768px;
-    padding: 25px 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1440px;
     padding-top: 26px;
   }
 }

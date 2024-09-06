@@ -3,13 +3,18 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 768px;
+    margin: auto;
   }
 
   @media (max-width: 785px) {
-    width: 320px;
+    max-width: 320px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: auto;
     display: flex;
     padding: 20px 29px;
   }

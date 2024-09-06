@@ -1,12 +1,21 @@
 
 
 .index-catalog {
+  @media (max-width: 785px) {
+    max-width: 320px;
+    margin: auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    width: 786px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 82px;
+    width: 1220px;
+    margin: auto;
   }
 }
 

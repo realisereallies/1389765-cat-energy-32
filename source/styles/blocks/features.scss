@@ -1,3 +1,20 @@
+.features {
+  @media (max-width: 785px) {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 786px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: auto;
+  }
+}
+
 .features__list {
   padding: 0;
   margin: 0;
