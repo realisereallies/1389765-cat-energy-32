@@ -1,15 +1,42 @@
 .instance {
   background-color: $based-color-gray;
+  padding: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
+.instance__main-inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.instance__wrapper {
+  @media (min-width: $desktop-width) {
+    background-color: $based-color-gray;
+  }
+}
 
 .instance h2 {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   color: $based-color-black;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
+    margin: 0;
+  }
 }
 
 .instance__discription {
@@ -18,10 +45,43 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    padding-bottom: 69px;
+    margin: 0;
+  }
 }
 
 .instance__list {
   list-style: none;
+  display: flex;
+  gap: 0 20px;
+  padding: 0;
+  margin: 0;
+
+
+  @media (min-width: $tablet-width) {
+    gap: 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+  }
+}
+
+.instance__list-item {
+  border: 1px solid #cdcdcd;
+  width: 124px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .instance__list h3 {
@@ -31,6 +91,22 @@
   line-height: 24px;
   text-align: center;
   color: $based-color-black;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+  }
 }
 
 .instance__list-discription {
@@ -48,4 +124,30 @@
   line-height: 20px;
   text-align: center;
   color: $based-color-black;
+
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    display: inline;
+    margin-left: auto;
+    width: 172px;
+    padding-top: 30px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
+  }
+}
+
+.instance__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

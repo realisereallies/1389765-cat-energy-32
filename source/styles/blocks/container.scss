@@ -1,18 +1,23 @@
 .container {
-  width: 280px;
-  padding: 13 20px 0;
+  position: relative;
+  margin: auto;
+
+  @media (min-width: 320px) {
+    margin-top: 12px;
+    width: 320px;
+  }
 }
 
 @media (min-width: 786px) {
   .container {
-    width: 708px;
-    padding: 25px 30px 0;
+    width: 768px;
+    padding: 25px 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
-    padding: 55px 64px 0;
+    width: 1440px;
+    padding-top: 26px;
   }
 }

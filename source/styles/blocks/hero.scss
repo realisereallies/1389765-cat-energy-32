@@ -1,5 +1,41 @@
 .hero {
-  background-color: hsla(97, 53%, 47%, 0.85);
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    //background-image: url("../../images/index-background-mobile@2x.png");
+    background-color: $based-color-green;
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+  }
+}
+
+.hero__image {
+  @media (max-width: 785px) {
+    margin-top: -120px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -290px;
+    margin-left: 500px;
+  }
+}
+
+.hero__wrapper {
+  @media (max-width: 785px) {
+    height: 285px;
+    width: 302px;
+    background-color: #68b738;
+    background-image: url("../../images/index-background-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: soft-light;
+  }
 }
 
 .hero__main-description {
@@ -9,6 +45,22 @@
   line-height: 36px;
   text-align: center;
   color: $based-color-white;
+  margin: 0;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    color: $based-color-black;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    width: 500px;
+    margin-left: 120px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
 }
 
 .hero__description {
@@ -18,4 +70,36 @@
   line-height: 14px;
   color: $based-color-white;
   text-align: center;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $based-color-black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 120px;
+  }
+}
+
+.hero__button {
+  width: 280px;
+  padding: 10px 0;
+
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 70px;
+  }
 }

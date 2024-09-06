@@ -1,11 +1,28 @@
 
 
+.index-catalog {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .index-catalog_cards {
   list-style: none;
 }
 
-@media (min-width: 1200px) {
-  .index-catalog__card {
+
+.index-catalog__card {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
   }
 }
