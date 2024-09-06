@@ -33,26 +33,48 @@
           </picture>
         </a>
       </div>
+      <div class="main-header__logo-wrapper">
+        <a class="main-header__logo-image" href="index.html">
+          <picture>
+            <source width="70" height="59" type="image/png" media="(min-width: 1440px)" srcset="images/fox-desktop.svg">
+            <source width="60" height="50" type="image/png" media="(min-width: 768px)" srcset="images/fox-tablet.svg">
+            <img class="fox-logotype" src="images/fox-mobile" srcset="images/fox-mobile.svg" alt="Пример продукции" width="33" height="38">
+          </picture>
+        </a>
+        <a class="main-header__logo-text" href="#">
+          <picture>
+            <source width="118" height="21" type="image/png" media="(min-width: 1440px)" srcset="images/logo-text.svg">
+            <source width="101" height="18" type="image/png" media="(min-width: 768px)" srcset="images/logo-text.svg">
+            <img class="text-logotype" src="images/logo-text.svg" srcset="images/logo-text.svg" alt="Пример продукции" width="101" height="18">
+          </picture>
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list main_nav-close">
-            <li class="main-nav__list-item main-nav__list-item--active">
-              <a href="#">Главная</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__list-item main-nav__item-last ">
-              <a href="#">Подбор программы</a>
-            </li>
-          </ul>
+            <ul class="main-nav__list main_nav-close">
+              <li class="main-nav__list-item main-nav__list-item--active">
+                <a href="#">Главная</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__list-item main-nav__item-last ">
+              <li class="main-nav__list-item main-nav__item-last ">
+                <a href="#">Подбор программы</a>
+              </li>
+            </ul>
         </div>
       </nav>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Полезное питание для кошек - Кет Энерджи</h1>
       <section class="hero">
+        <div class="hero__wrapper">
+          <h2 class="hero__main-description">Функциональное <br> питание для котов</h2>
+          <h3 class="hero__description">Занялся собой? Займись котом!</h3>
+        </div>
         <div class="hero__wrapper">
           <h2 class="hero__main-description">Функциональное <br> питание для котов</h2>
           <h3 class="hero__description">Занялся собой? Займись котом!</h3>
@@ -69,12 +91,17 @@
         <ul class="index-catalog__card">
           <li class="card fit-cat">
             <h2 class="card__title">Похудение</h2>
+          <li class="card fit-cat">
+            <h2 class="card__title">Похудение</h2>
             <p class="card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="card__link card__link-position" href="#">Каталог Slim</a>
             <a class="card__link card__link-position" href="#">Каталог Slim</a>
           </li>
           <li class="card strong-cat">
             <h2 class="card__title">Набор массы</h2>
+            <h2 class="card__title">Набор массы</h2>
             <p class="card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="card__link card__link-position" href="#">Каталог pro</a>
             <a class="card__link card__link-position" href="#">Каталог pro</a>
           </li>
         </ul>
@@ -84,11 +111,14 @@
         <ul class="features__list">
           <li class="features__list-item features__list-item-leaf">
             <p class="features__item-decsription">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="features__item-decsription">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="features__list-item features__list-item-wash">
             <p class="features__item-decsription">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="features__item-decsription">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="features__list-item features__list-item-eat">
+            <p class="features__item-decsription">Замените один-два приема обычной еды на наше функциональное питание.</p>
             <p class="features__item-decsription">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="features__list-item features__list-item-alarm">
@@ -142,6 +172,7 @@
           <source width="786" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
           <img class="contacts-map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png" alt="Отметка на карте, магазин Кет Энерджи" width="320" height="362">
         </picture>
+
       </section>
     </main>
     <footer class="main-footer">
