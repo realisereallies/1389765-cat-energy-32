@@ -1,0 +1,21 @@
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $based-color-white;
+  border: none;
+  display: block;
+  background-color: #68b738;
+}
+
+.more-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $based-color-text;
+  background-color: $based-color-gray;
+}
