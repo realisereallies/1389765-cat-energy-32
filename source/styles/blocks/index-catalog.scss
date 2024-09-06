@@ -28,17 +28,13 @@
   list-style: none;
   padding: 0;
 
-  @media (min-width: $desktop-width) {
-
-.index-catalog__card {
-  list-style: none;
-  padding: 0;
+  @media (min-width: $tablet-width) {
+    list-style: none;
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1220px;
     justify-content: space-between;
     align-items: center;
     width: 1220px;
