@@ -18,4 +18,11 @@
   text-align: center;
   color: $based-color-text;
   background-color: $based-color-gray;
+  border: none;
+}
+
+.additional-button {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

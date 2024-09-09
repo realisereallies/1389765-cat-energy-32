@@ -20,16 +20,25 @@
   margin: 0;
   list-style: none;
 
+  @media (max-width: 785px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     gap: 37px 153px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     display: flex;
     gap: 0 94px;
+    padding-left: 0;
   }
 }
 
@@ -41,6 +50,20 @@
   line-height: 40px;
   text-align: left;
   padding-bottom: 32px;
+
+
+  @media (max-width: 785px) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+
 }
 
 
