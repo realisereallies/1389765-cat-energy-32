@@ -118,6 +118,7 @@
   margin: auto;
   text-align: center;
 
+
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
@@ -135,6 +136,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
+
     top: 450px;
     left: 80px;
     margin: 0;
@@ -144,5 +146,6 @@
     line-height: 26px;
     text-align: center;
     width: 244px;
+
   }
 }
