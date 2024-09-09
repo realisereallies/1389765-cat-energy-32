@@ -17,6 +17,10 @@
     margin: auto;
     display: flex;
     padding: 20px 29px;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 100px;
   }
 }
 
@@ -52,7 +56,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
+    width: 150px;
+    height: 30px;
+    padding: 16px;
+    padding-top: 25px;
+  }
+}
+
+.main-header__logo-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
