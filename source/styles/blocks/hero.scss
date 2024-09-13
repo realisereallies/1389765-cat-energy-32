@@ -1,9 +1,13 @@
 .hero {
-  position: relative;
-
   @media (max-width: 785px) {
     max-width: 320px;
     margin: auto;
+    position: relative;
+    background-image: url("../../images/Rectangle 17@2x.png"), url("../../images/index-background-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 320px;
+    background-position-x: 100% 100%;
+    background-position-y: 0 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -23,23 +27,50 @@
     margin: auto;
     min-height: 694px;
     padding-top: 0;
+    margin-top: -100px;
+  }
+}
+
+.hero__grid-container {
+  @media (max-width: 785px) {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "disk"
+      "img"
+      "butt";
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 414px auto;
+    grid-template-rows: 150px 100px 54px;
+    padding-top: 200px;
   }
 }
 
 .hero__image {
+  width: 280px;
+  height: 270px;
+  margin-left: 20px;
+
   @media (max-width: 785px) {
-    margin-top: -120px;
-    margin-left: 20px;
+
+    grid-area: img;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-left: 0;
+    margin-top: -100px;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 150px;
-    margin-left: 350px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin: 0;
   }
 }
 
@@ -65,6 +96,11 @@
   margin: 0;
   padding-top: 27px;
 
+  @media (max-width: 785px) {
+    grid-area: main;
+  }
+
+
   @media (min-width: $tablet-width) {
     color: $based-color-black;
     font-size: 60px;
@@ -72,15 +108,14 @@
     line-height: 60px;
     text-align: left;
     width: 500px;
+    grid-row: 1 /2;
+    grid-column: 1/2;
+    padding-bottom: 40px;
     margin-left: 120px;
-    padding-top: 60px;
-    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 100px;
-    left: -50px;
+    margin-left: 0;
   }
 }
 
@@ -95,19 +130,25 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  @media (max-width: 785px) {
+    grid-area: disk;
+  }
+
   @media (min-width: $tablet-width) {
     color: $based-color-black;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+    grid-row: 2 /3;
+    grid-column: 1/2;
+    padding: 0;
+    padding-bottom: 50px;
     margin-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 350px;
-    left: -50px;
+    margin-left: 0;
   }
 }
 
@@ -118,11 +159,12 @@
   margin: auto;
   text-align: center;
 
+  @media (max-width: 785px) {
+    grid-area: butt;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
-    position: absolute;
-    top: 280px;
-    left: 120px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
@@ -130,13 +172,13 @@
     padding: 14px 20px;
     text-align: center;
     width: 244px;
+    margin: 0;
+    margin-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    position: absolute;
-    top: 450px;
-    left: 80px;
+    position: static;
     margin: 0;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -144,5 +186,8 @@
     line-height: 26px;
     text-align: center;
     width: 244px;
+    height: 54px;
+    grid-row: 3 /4;
+    grid-column: 1/2;
   }
 }
