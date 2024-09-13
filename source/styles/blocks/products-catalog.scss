@@ -48,6 +48,10 @@
     flex-wrap: wrap;
     gap: 80px 63px;
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 80px 63px;
+  }
 }
 
 .catalog-title {
@@ -60,9 +64,11 @@
   margin: 0;
   text-align: center;
 
+
   @media (min-width: $tablet-width) {
     width: 140px;
   }
+
 }
 
 
@@ -81,6 +87,7 @@
   line-height: 16px;
   text-align: center;
 
+
   @media (min-width: $tablet-width) {
     width: 170px;
   }
@@ -88,6 +95,7 @@
 
 .item-more {
   border-bottom: solid 1px  #ba2f2f;
+
 }
 
 

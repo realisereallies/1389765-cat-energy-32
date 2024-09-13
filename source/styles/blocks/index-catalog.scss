@@ -32,10 +32,12 @@
   align-items: center;
   justify-content: center;
 
+
   @media (min-width: $tablet-width) {
     list-style: none;
     padding: 0;
   }
+
 
   @media (min-width: $tablet-width) {
     list-style: none;

@@ -51,6 +51,7 @@
   text-align: left;
   padding-bottom: 32px;
 
+
   @media (max-width: 785px) {
     padding-left: 20px;
   }
@@ -62,7 +63,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
   }
-}
+
 
 
 .features__item-decsription {
