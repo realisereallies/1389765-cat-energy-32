@@ -456,6 +456,7 @@ img {
 @media (min-width: 1200px) {
   .hero__main-description {
     margin-left: 0;
+    padding-top: 0;
   }
 }
 
