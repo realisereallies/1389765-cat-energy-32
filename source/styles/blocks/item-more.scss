@@ -8,9 +8,22 @@
   background-image: url("../../icons/stack.svg#plus");
   background-repeat: no-repeat;
   margin: auto;
+
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .item-more {
+
   display: flex;
   flex-direction: column;
+
+
+  @media (min-width: $desktop-width) {
+    border: 2px solid #f2f2f2;
+    width: 245px;
+  }
+
 }
