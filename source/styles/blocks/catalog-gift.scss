@@ -37,6 +37,11 @@
     padding-top: 70px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+    text-align: center;
+  }
 }
 
 .catalog-gift::before {
@@ -57,5 +62,9 @@
     left: 100px;
     width: 80px;
     height: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 80px;
   }
 }
