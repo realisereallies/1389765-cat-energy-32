@@ -1,6 +1,6 @@
 .catalog-gift {
   background-image: url("../../images/catalog-present@2x.png");
-  background-position: 100%;
+  background-position: 30% 60%;
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -10,10 +10,15 @@
 
   @media (min-width: $tablet-width) {
     width: 707px;
+    min-height: 200px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    height: 288px;
+    background-position: 100%;
+
+    margin-top: 80px;
   }
 }
 
@@ -29,6 +34,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 70px;
     text-align: right;
   }
 }
@@ -47,7 +53,7 @@
   left: 100px;
 
   @media (min-width: $tablet-width) {
-    top: 100px;
+    top: 55px;
     left: 100px;
     width: 80px;
     height: 82px;

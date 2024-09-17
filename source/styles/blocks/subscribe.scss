@@ -1,9 +1,13 @@
+.subscribe {
+  padding-bottom: 40px;
+}
+
 .subscribe__position {
   width: 320px;
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    width: 786px;
+    width: 707px;
     margin: auto;
   }
 
@@ -21,6 +25,7 @@
   color: $based-color-black;
   width: 280px;
   text-align: center;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     width: 632px;
@@ -33,8 +38,22 @@
 
 .subscribe-form {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .subscribe_button {
   margin: auto;
+}
+
+.subscribe__button {
+  width: 280px;
+  margin: auto;
+  padding: 15px 81px;
+}
+
+.subscribe_title {
+  padding-left: 20px;
 }

@@ -102,12 +102,6 @@
     padding: 31px 0;
     width: 230px;
   }
-
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    padding: 31px 0;
-  }
 }
 
 
@@ -124,8 +118,9 @@
     display: block;
   }
 
-  @media (min-width: 786px) {
-    display: block;
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
   }
 }
 
