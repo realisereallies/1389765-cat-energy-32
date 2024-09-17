@@ -8,6 +8,7 @@
   border: none;
   display: block;
   background-color: #68b738;
+  cursor: pointer;
 }
 
 .more-button {
@@ -25,4 +26,12 @@
   width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  opacity: 0.8;
 }

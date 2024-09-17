@@ -58,7 +58,6 @@
   margin-left: 20px;
 
   @media (max-width: 785px) {
-
     grid-area: img;
   }
 
@@ -101,7 +100,6 @@
   color: $based-color-white;
   margin: 0;
   padding-top: 27px;
-
   @media (max-width: 785px) {
     grid-area: main;
   }
@@ -123,7 +121,6 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     padding-top: 0;
-
   }
 }
 

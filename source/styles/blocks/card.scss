@@ -83,6 +83,14 @@
   }
 }
 
+.card__link:hover {
+  opacity: 0.7;
+}
+
+.card__link:active {
+  opacity: 0.3;
+}
+
 .card__link::after {
   display: inline-block;
   content: "";

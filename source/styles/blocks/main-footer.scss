@@ -53,10 +53,31 @@
   }
 }
 
+.main-footer__logo-text:hover {
+  opacity: 0.6;
+}
+
+.main-footer__logo-text:active {
+  opacity: 0.3;
+}
+
 .main-footer__academy-discription {
   margin-right: 113px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
   }
+}
+
+.main-footer__inner:hover {
+  color: #68b738;
+
+  .academy-logo::before {
+    background-color: #68b738;
+  }
+}
+
+.main-footer__inner:active {
+  opacity: 0.3;
 }

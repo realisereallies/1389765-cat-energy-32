@@ -13,7 +13,7 @@
 }
 
 .instance__position {
-  width: 320px;
+  width: 280px;
   margin: auto;
 
   @media (min-width: $tablet-width) {
@@ -39,6 +39,16 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 440px 560px;
+    grid-template-rows: 270px 270px;
+    gap: 20px;
+  }
+}
+
+.instance__span {
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
   }
 }
 
@@ -82,8 +92,10 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    padding-bottom: 69px;
+    place-self: center center;
     margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
@@ -102,6 +114,24 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 55px;
+  }
+}
+
+.list-item__main-discription h3 {
+  @media (min-width: $tablet-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
   }
 }
 
@@ -132,26 +162,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Lato", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-    text-align: center;
-  }
-
-  @media (min-width: $tablet-width) {
     font-family: "Oswald", sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-family: "Lato", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
+    line-height: 37px;
     text-align: center;
   }
 }
@@ -201,5 +215,11 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
+}
+
+.instance__title {
+  margin: auto;
 }
