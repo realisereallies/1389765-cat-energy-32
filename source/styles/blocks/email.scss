@@ -6,5 +6,21 @@
   line-height: 29.64px;
   text-align: left;
   padding: 13px;
-  border: solid 1px #cdcdcd;
+  border: solid 1px #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.email:hover {
+  border: solid 1px  #cdcdcd;
+}
+
+.email:focus {
+  border: solid 1px  #000000;
 }
