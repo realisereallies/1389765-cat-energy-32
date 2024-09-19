@@ -2,7 +2,7 @@
 .card {
   background-color: $based-color-gray;
   padding: 20px;
-  margin-bottom: 20px;
+
   width: 280px;
   position: relative;
 
@@ -20,13 +20,18 @@
   }
 }
 
-.card h2 {
+.card__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
-  text-align: left;
+  text-align: center;
   color: $based-color-black;
+  margin-left: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-family: "Oswald", sans-serif;
@@ -34,7 +39,8 @@
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    padding-bottom: 24px;
+    padding-bottom: 27px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,10 +58,16 @@
   text-align: left;
   padding-bottom: 21px;
   border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 340px;
     border: none;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +84,7 @@
   text-align: center;
   color: $based-color-black;
   padding-top: 19px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -99,10 +112,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 24px;
-  height: 10px;
+  width: 35px;
+  height: 14px;
   margin-left: 15px;
   transition: all 0.3s linear;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
 
 .card__link::after:is(:hover, :active, :focus)::after {
@@ -115,12 +132,14 @@
   background-color: rgb(0, 0, 0, 0);
   background-position: center center;
   background-size: contain;
-  display: block;
+  position: absolute;
+  top: 23px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 40px;
-    right: 50px;
+    top: 83px;
+    left: 445px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,14 +166,25 @@
   }
 }
 
+.strong-cat .card__title {
+  margin-left: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .strong-cat::before {
   background-image: url("../../icons/stack.svg#fat-cat");
   width: 67px;
   height: 50px;
+  left: 13px;
 
   @media (min-width: $tablet-width) {
     width: 280px;
     height: 200px;
+    left: 410px;
+    top: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,6 +193,8 @@
   }
 }
 
-.card__title {
-  margin: 0;
+.fit-cat {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
 }

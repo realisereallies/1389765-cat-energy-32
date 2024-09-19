@@ -4,11 +4,6 @@
   margin: auto;
 }
 
-@media (min-width: $tablet-width) {
-  .container {
-    padding-top: 25px;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .container {

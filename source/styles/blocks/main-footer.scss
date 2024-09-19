@@ -1,10 +1,11 @@
 .main-footer {
   padding-top: 40px;
   background-color: $based-color-gray;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 55px;
+    padding-top: 75px;
     padding-bottom: 55px;
     justify-content: space-between;
   }
@@ -42,10 +43,13 @@
   margin: auto;
   display: block;
 
+
   @media (min-width: $tablet-width) {
     width: 128px;
     height: 24px;
-    padding-top: 8px;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,11 +66,19 @@
 }
 
 .main-footer__academy-discription {
-  margin-right: 113px;
+  margin-right: 140px;
   cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-left: 20px;
+
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
+    margin-top: 20px;
   }
 }
 
