@@ -1,8 +1,4 @@
-.main_nav-close {
-  @media (max-width: 785px) {
-    display: none;
-  }
-}
+
 
 .main-nav {
   position: relative;
@@ -19,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: 50px;
   }
 }
 
@@ -81,6 +78,14 @@
   }
 }
 
+.main-nav__list-item:hover {
+  opacity: 0.6;
+}
+
+.main-nav__list-item:active {
+  opacity: 0.3;
+}
+
 .main-nav__toggle {
   background-image: url("../../icons/stack.svg#icon-menue");
   background-repeat: no-repeat;
@@ -95,8 +100,18 @@
   position: absolute;
   left: 270px;
   top: -42px;
+  z-index: 1;
 }
 
+.checked {
+  background-image: url("../../icons/stack.svg#x-icon");
+}
+
+.main_nav-close {
+  @media (max-width: 785px) {
+    display: none;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__list {

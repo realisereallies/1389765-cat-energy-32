@@ -10,7 +10,7 @@
   margin: auto;
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: auto;
   }
 }
 
@@ -19,7 +19,22 @@
   flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    border: 2px solid #f2f2f2;
     width: 245px;
+    height: 380px;
+    align-self: flex-end;
+  }
+
+}
+
+.more-title {
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.products-catalog__more-discription {
+  @media (min-width: $tablet-width) {
+    margin: auto;
   }
 }
