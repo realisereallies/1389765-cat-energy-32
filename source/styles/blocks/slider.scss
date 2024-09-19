@@ -94,4 +94,39 @@
     margin-left: 70px;
     padding-bottom: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+}
+
+.slider__before {
+  position: absolute;
+  z-index: 1;
+}
+
+
+.slider__fat-cat {
+  overflow: hidden;
+  object-fit: cover;
+  object-position: left;
+  display: block;
+  width: 50%;
+  background-color: #eaeaea;
+}
+
+
+.slider__fit-cat {
+
+  overflow: hidden;
+  object-fit: cover;
+  object-position: right;
+  display: block;
+  width: 100%;
+}
+
+.slider img {
+  max-width: none;
+  object-fit: contain;
 }
