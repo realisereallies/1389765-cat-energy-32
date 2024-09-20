@@ -5,9 +5,7 @@
     position: relative;
     background-image: url("../../images/Rectangle 17@2x.png"), url("../../images/index-background-mobile@2x.png");
     background-repeat: no-repeat;
-    background-size: 100% 302px;
-    background-position-x: 100% 100%;
-    background-position-y: 0 0;
+    background-size: 320px 304px;
     padding-bottom: 4px;
   }
 
@@ -20,17 +18,38 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../images/Rectangle 17@2x.png"), url("../../images/index-background-mobile@2x.png");
-    background-position-x: 100%;
-    background-position-y: 0%;
-    background-repeat: no-repeat;
-    background-size: 720px 694px;
-    width: 1220px;
-    margin: auto;
-    min-height: 694px;
-    padding-top: 0;
+    padding-bottom: 188px;
+  }
+}
 
-    margin-top: -100px;
+.hero::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    z-index: 2;
+    background-image: url("../../images/index-background-desktop-1@2x.png");
+    position: absolute;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 720px;
+    height: 694px;
+    left: 50%;
+    top: -120px;
+  }
+}
+
+.hero::after {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #68b738 20%, hsla(97, 53%, 47%, 0.85) 92%, #68b738 99%);
+    content: "";
+    z-index: 2;
+    position: absolute;
+    background-position: 30%;
+    top: -130px;
+    left: 390px;
+    background-size: contain;
+    width: 725px;
+    height: 706px;
   }
 }
 
@@ -47,11 +66,11 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    gap: 20px;
+    gap: 0;
     grid-template-columns: 414px auto;
-    grid-template-rows: 150px 100px 54px;
-    padding-top: 170px;
-    padding-left: 80px;
+    grid-template-rows: 150px 80px 54px;
+    padding-top: 110px;
+    margin-left: -140px;
   }
 }
 
@@ -79,7 +98,9 @@
     grid-column: 2/3;
     grid-row: 1/4;
     margin: 0;
-    margin-left: -80px;
+    margin-left: -100px;
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -142,6 +163,8 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     padding-top: 0;
+    position: relative;
+    z-index: 3;
   }
 }
 
@@ -176,6 +199,10 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 0;
+    padding-top: 10px;
   }
 }
 

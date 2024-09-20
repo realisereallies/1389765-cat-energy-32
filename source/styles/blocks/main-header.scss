@@ -14,9 +14,11 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    min-width: 1220px;
+    width: 1220px;
     align-items: center;
-    padding-top: 30px;
+    position: relative;
+    z-index: 3;
+    padding-top: 55px;
   }
 }
 
@@ -39,7 +41,7 @@
     width: 70px;
     height: 59px;
     margin-right: 0;
-    padding-top: 0;
+    padding: 0;
   }
 }
 
@@ -64,8 +66,9 @@
   @media (min-width: $desktop-width) {
     width: 150px;
     height: 30px;
-    padding: 16px;
-    padding-top: 25px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-left: 12px;
   }
 }
 
@@ -79,5 +82,6 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    padding: 0;
   }
 }

@@ -16,6 +16,13 @@
     margin: auto;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    margin: 0;
+    gap: 30px;
+    justify-content: start;
+  }
 }
 
 .social-list__item::before {

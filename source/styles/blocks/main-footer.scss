@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 40px;
+    padding-top: 41px;
     padding-bottom: 55px;
     justify-content: space-between;
   }
@@ -13,6 +13,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 70px;
   }
 }
 
@@ -29,7 +30,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 1120px;
+    width: 1220px;
   }
 }
 
@@ -54,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: 70px;
   }
 }
 
@@ -79,6 +81,23 @@
     margin-right: 23px;
     margin-top: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+}
+
+.main-footer__inner:hover {
+  color: #68b738;
+
+  .academy-logo::before {
+    background-color: #68b738;
+  }
+}
+
+.main-footer__inner:active {
+  opacity: 0.3;
 }
 
 .main-footer__inner:hover {

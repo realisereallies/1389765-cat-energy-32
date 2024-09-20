@@ -25,6 +25,22 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 14px;
+    flex-wrap: wrap;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 33px;
+    padding-top: 15px;
+    padding-right: 0;
+  }
 }
 
 .main-nav__list-item a {
@@ -115,16 +131,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 0 auto;
-    padding-top: 14px;
-    flex-wrap: wrap;
-    padding-right: 30px;
-  }
-
   .main-nav__toggle {
     display: none;
   }
@@ -135,16 +141,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__list {
-    display: flex;
-    width: 475px;
-    padding-top: 0;
-  }
-
-  .main-nav {
-    width: 475px;
-  }
-
   .main-nav__toggle {
     display: none;
   }
