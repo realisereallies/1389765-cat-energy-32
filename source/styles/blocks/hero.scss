@@ -15,7 +15,6 @@
     width: 786px;
     margin: auto;
     padding-bottom: -5px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,7 +141,7 @@
   color: $based-color-white;
   margin: 0;
   padding-top: 27px;
-
+  
   @media (max-width: 785px) {
     grid-area: main;
   }
