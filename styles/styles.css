@@ -1245,8 +1245,9 @@ input {
   text-align: left;
   color: #000000;
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 @media (min-width: 786px) {
   .instance__title {
