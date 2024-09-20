@@ -137,24 +137,6 @@
   }
 }
 
-.list-item__main-discription h3 {
-  @media (min-width: $tablet-width) {
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 37px;
-    text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 37px;
-    text-align: center;
-  }
-}
-
 .instance__list-item {
 
   width: 124px;
