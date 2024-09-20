@@ -1,5 +1,5 @@
 .main-footer {
-  padding-top: 20px;
+  padding-top: 40px;
   background-color: $based-color-gray;
   margin: auto;
 
@@ -13,6 +13,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 70px;
   }
 }
 
@@ -29,7 +30,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 1120px;
+    width: 1220px;
   }
 }
 
@@ -54,6 +55,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-right: 70px;
   }
 }
 
@@ -79,6 +81,11 @@
   @media (min-width: $tablet-width) {
     margin-right: 23px;
     margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    margin-left: 10px;
   }
 }
 
