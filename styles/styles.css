@@ -396,10 +396,12 @@ input {
     width: 786px;
     margin: auto;
     padding-bottom: -5px;
+    position: relative;
   }
 }
 @media (min-width: 1200px) {
   .hero {
+    position: relative;
     padding-bottom: 188px;
   }
 }
@@ -1376,25 +1378,6 @@ input {
   }
 }
 
-@media (min-width: 786px) {
-  .list-item__main-discription h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 37px;
-    text-align: center;
-  }
-}
-@media (min-width: 1200px) {
-  .list-item__main-discription h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 37px;
-    text-align: center;
-  }
-}
-
 .instance__list-item {
   width: 124px;
   margin: auto;
@@ -1727,6 +1710,10 @@ input {
 }
 .main-footer__inner:hover .academy-logo::before {
   background-color: #68b738;
+}
+
+.main-footer__inner:active {
+  opacity: 0.3;
 }
 
 .main-footer__inner:active {
