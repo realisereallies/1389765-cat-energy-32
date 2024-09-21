@@ -15,8 +15,7 @@
 }
 
 .item-more {
-  display: flex;
-  flex-direction: column;
+  display: block;
 
 
   @media (min-width: $tablet-width) {
@@ -33,6 +32,10 @@
 }
 
 .more-title {
+  padding-top: 25px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+
   @media (min-width: $tablet-width) {
     margin: auto;
     text-align: center;
@@ -40,6 +43,10 @@
 }
 
 .products-catalog__more-discription {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     margin: auto;
   }

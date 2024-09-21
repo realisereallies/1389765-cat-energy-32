@@ -6,8 +6,8 @@
   display: flex;
   margin: auto;
   width: 320px;
-  padding: 26px 0 10px;
-  justify-content: space-between;
+  padding: 26px 0 25px;
+  justify-content: space-evenly;
 
   @media (min-width: $tablet-width) {
     width: 628px;
@@ -83,6 +83,8 @@
 }
 
 .contacts__span {
-  display: inline-block;
-  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 20px;
+  }
 }

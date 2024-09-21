@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;
-    margin-left: auto;
+    margin-left: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,11 +28,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 35px;
     margin: 0 auto;
     padding-top: 14px;
     flex-wrap: wrap;
     padding-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +52,14 @@
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
 
   @media (min-width: $desktop-width) {
     color: $based-color-white;

@@ -67,6 +67,12 @@
   opacity: 0.3;
 }
 
+.logo__link {
+  text-decoration: none;
+  color: #444444;
+}
+
+
 .main-footer__academy-discription {
   margin-right: 140px;
   cursor: pointer;
@@ -94,6 +100,10 @@
 
   .academy-logo::before {
     background-color: #68b738;
+  }
+
+  .logo__link {
+    opacity: 0.6;
   }
 }
 

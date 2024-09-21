@@ -28,6 +28,7 @@
   width: 280px;
   text-align: center;
   margin: auto;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 632px;
@@ -55,9 +56,17 @@
 }
 
 .subscribe__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+
   width: 280px;
   margin: auto;
-  padding: 15px 81px;
+  padding: 15px;
+  margin-top: 18px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -66,8 +75,15 @@
   }
 }
 
+.subscribe-form p {
+  margin: 0;
+}
+
 .subscribe_title {
   padding-left: 20px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
