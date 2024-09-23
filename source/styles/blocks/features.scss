@@ -2,7 +2,7 @@
 
   padding-bottom: 50px;
 
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     max-width: 320px;
     margin: auto;
   }
@@ -26,7 +26,7 @@
   list-style: none;
   gap: 20px;
 
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
@@ -59,7 +59,7 @@
   margin-bottom: 0;
 
 
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     padding-left: 20px;
   }
 
@@ -107,6 +107,7 @@
     display: inline-block;
     padding-left: 20px;
     margin: 0;
+    position: relative;
   }
 
 
@@ -144,10 +145,42 @@
   background-repeat: no-repeat;
 }
 
+.features__list-item-leaf::after {
+  @media (min-width: $tablet-width) {
+    content: "1";
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    text-align: center;
+    color: #f2f2f2;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 118px;
+  }
+}
+
 .features__list-item-wash::before {
   background-image: url("../../icons/stack.svg#wash");
   background-size: 25px 28px;
   background-repeat: no-repeat;
+}
+
+.features__list-item-wash::after {
+  @media (min-width: $tablet-width) {
+    content: "2";
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    text-align: center;
+    color: #f2f2f2;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 113px;
+  }
 }
 
 .features__list-item-eat::before {
@@ -156,8 +189,40 @@
   background-repeat: no-repeat;
 }
 
+.features__list-item-eat::after {
+  @media (min-width: $tablet-width) {
+    content: "3";
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    text-align: center;
+    color: #f2f2f2;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 113px;
+  }
+}
+
 .features__list-item-alarm::before {
   background-image: url("../../icons/stack.svg#alarm");
   background-size: 26px 31px;
   background-repeat: no-repeat;
+}
+
+.features__list-item-alarm::after {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    text-align: center;
+    color: #f2f2f2;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 113px;
+  }
 }

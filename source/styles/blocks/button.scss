@@ -20,6 +20,10 @@
   color: $based-color-text;
   background-color: $based-color-gray;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+  }
 }
 
 .additional-button {

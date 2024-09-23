@@ -5,7 +5,7 @@
   min-width: 320px;
   text-transform: uppercase;
 
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     margin-top: 12px;
   }
 
@@ -16,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    min-width: 450px;
   }
 }
 
@@ -40,9 +41,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 33px;
     padding-top: 15px;
     padding-right: 0;
+    justify-content: flex-start;
+    gap: 35px;
   }
 }
 
@@ -63,6 +65,10 @@
 
   @media (min-width: $desktop-width) {
     color: $based-color-white;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
 
@@ -70,7 +76,6 @@
 .main-nav__catalog-list-item--active {
   @media (min-width: $tablet-width) {
     border-bottom: solid 2px #68b738;
-    padding-bottom: 5px;
   }
 }
 
@@ -95,7 +100,7 @@
 
   text-align: center;
 
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     border-top: 1px solid #e6e6e6;
     padding-top: 22px;
     padding-bottom: 24px;
@@ -136,7 +141,7 @@
 }
 
 .main_nav-close {
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -164,6 +169,10 @@
 .main-nav__catalog {
   color: #111111;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+  }
 }
 
 .header-catalog {
