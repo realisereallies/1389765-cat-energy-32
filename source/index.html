@@ -52,17 +52,19 @@
     <main class="main-container">
       <h1 class="visually-hidden">Полезное питание для кошек - Кет Энерджи</h1>
       <section class="hero">
-        <div class="hero__grid-container">
+        <div class="hero__background">
+          <div class="hero__grid-container">
 
-          <h2 class="hero__main-description">Функциональное <br> питание для котов</h2>
-          <h3 class="hero__description">Занялся собой? Займись котом!</h3>
-          <button class="hero__button button" type="button">Подобрать программу</button>
+            <h2 class="hero__main-description">Функциональное <br> питание для котов</h2>
+            <h3 class="hero__description">Занялся собой? Займись котом!</h3>
+            <button class="hero__button button" type="button">Подобрать программу</button>
 
-          <picture class="hero__image">
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-            <source width="700" height="600" type="image/png" media="(min-width: 768px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-            <img class="hero__img" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png" alt="Пример продукции" width="280" height="275">
-          </picture>
+            <picture class="hero__image">
+              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+              <source width="700" height="600" type="image/png" media="(min-width: 768px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+              <img class="hero__img" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png" alt="Пример продукции" width="280" height="275">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="index-catalog">
@@ -122,22 +124,24 @@
                 <p class="instance-discription-price"><span class="instance__span">Затраты на питание:</span> 15 000 РУБ.</p>
               </div>
               <div class="slider">
-                <div class="slider__wrapper">
-                  <div class="slider__before">
-                    <picture class="slider__fat-cat">
-                      <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@1x.png 2x">
-                      <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@1x.png 2x">
-                      <img src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
-                    </picture>
+                <div class="slider__position">
+                  <div class="slider__wrapper">
+                    <div class="slider__before">
+                      <picture class="slider__fat-cat">
+                        <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@1x.png 2x">
+                        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@1x.png 2x">
+                        <img src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
+                      </picture>
+                    </div>
+                    <div class="slider__after">
+                      <picture class="slider__fit-cat">
+                        <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@1x.png 2x">
+                        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@1x.png 2x">
+                        <img src="images/thin-cat-mobile@1x.png" srcset="images/thin-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
+                      </picture>
+                    </div>
+                    <button class="slider__button" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
                   </div>
-                  <div class="slider__after">
-                    <picture class="slider__fit-cat">
-                      <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@1x.png 2x">
-                      <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@1x.png 2x">
-                      <img src="images/thin-cat-mobile@1x.png" srcset="images/thin-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
-                    </picture>
-                  </div>
-                  <button class="slider__button" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
                 </div>
               </div>
             </div>
@@ -162,25 +166,25 @@
           </picture>
         </a>
         <ul class="social-list">
-          <li class="social-list__item social-vk">
-            <a class="social-list__link " href="#">
+          <li>
+            <a class="social-list__link social-vk social-list__item " href="#">
               <span class="visually-hidden">Мы в Вк</span>
             </a>
           </li>
-          <li class="social-list__item social-yt">
-            <a class="social-list__link " href="#">
+          <li>
+            <a class="social-list__link social-list__item social-yt" href="#">
               <span class="visually-hidden">Мы на Ютуб</span>
             </a>
           </li>
-          <li class="social-list__item social-tg">
-            <a class="social-list__link " href="#">
+          <li>
+            <a class="social-list__link social-list__item social-tg" href="#">
               <span class="visually-hidden">Мы в Телеграмм!</span>
             </a>
           </li>
         </ul>
         <div class="main-footer__inner">
-          <h3 class="main-footer__academy-discription">HTML Academy</h3>
-          <a class="academy-logo" href="#">
+          <h3 class="main-footer__academy-discription"><a class="logo-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></h3>
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт Html Academy</span>
           </a>
         </div>

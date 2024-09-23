@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 41px;
+    padding-top: 45px;
     padding-bottom: 55px;
     justify-content: space-between;
   }
@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 70px;
+    padding-top: 75px;
   }
 }
 
@@ -67,6 +67,12 @@
   opacity: 0.3;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: #444444;
+}
+
+
 .main-footer__academy-discription {
   margin-right: 140px;
   cursor: pointer;
@@ -80,6 +86,7 @@
   @media (min-width: $tablet-width) {
     margin-right: 23px;
     margin-top: 20px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -94,22 +101,14 @@
   .academy-logo::before {
     background-color: #68b738;
   }
-}
 
-.main-footer__inner:active {
-  opacity: 0.3;
-}
-
-.main-footer__inner:active {
-  opacity: 0.3;
-}
-
-.main-footer__inner:hover {
-  color: #68b738;
-
-  .academy-logo::before {
-    background-color: #68b738;
+  .logo-link {
+    opacity: 0.6;
   }
+}
+
+.main-footer__inner:active {
+  opacity: 0.3;
 }
 
 .main-footer__inner:active {

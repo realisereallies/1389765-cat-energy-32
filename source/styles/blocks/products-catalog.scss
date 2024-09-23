@@ -1,6 +1,6 @@
 .products-catalog {
   @media (min-width: $desktop-width) {
-    padding-bottom: 71px;
+    padding-bottom: 65px;
   }
 }
 
@@ -31,10 +31,21 @@
   border-bottom: solid 1px  #ebebeb;
   padding-top: 27px;
   padding-bottom: 41px;
-  margin-top: 0;
+  margin: 0;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    padding-top: 65px;
+    padding-left: 0;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
   }
 }
 
@@ -42,11 +53,17 @@
   list-style: none;
   padding: 0;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 79px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px 80px;
   }
 }
 
@@ -75,6 +92,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 4px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -105,6 +124,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    gap: 10px;
   }
 }
 
@@ -113,7 +133,6 @@
     background: linear-gradient(#ffffff 15%, #eaeaea 15%);
   }
 }
-
 
 .products-catalog__inner {
   display: grid;
@@ -124,22 +143,37 @@
     "tit           tt"
     "pt            pp";
   gap: 0;
+  padding-left: 20px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 125px 125px;
-    grid-template-rows: 48px 20px 20px 20px;
+    grid-template-rows: 68px 30px 30px 30px;
     margin: auto;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 84px 84px;
+    grid-template-rows: 68px 32px 32px 40px;
   }
 }
+
+.big-can-inner {
+  padding-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
 
 .catalog-button {
   width: 280px;
   height: 40px;
+  text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -151,6 +185,11 @@
   }
 }
 
+button:focus {
+  border: solid 3px #000000;
+}
+
+
 .weight-title {
   grid-area: wt;
 
@@ -161,9 +200,9 @@
 
 .weight {
   grid-area: wght;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
-    text-align: right;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -178,9 +217,9 @@
 
 .taste {
   grid-area: tt;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
-    text-align: right;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -195,21 +234,61 @@
 
 .price {
   grid-area: pp;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
-    text-align: right;
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .products-catalog__picture {
+  padding-top: 10px;
+  padding-left: 35px;
+
   @media (min-width: $tablet-width) {
     margin: auto;
+    padding-left: 0;
+    margin-top: -30px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.big-can {
+  padding-left: 25px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.small-can {
+  @media (min-width: $tablet-width) {
+    margin-top: -20px;
+    padding-bottom: 20px;
   }
 }
 
 .products-catalog__item-title {
+  width: 80px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     justify-self: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    width: 140px;
   }
 }
