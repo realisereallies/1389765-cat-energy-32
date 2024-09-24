@@ -134,6 +134,7 @@
   }
 }
 
+
 .products-catalog__inner {
   display: grid;
   grid-template-columns: 70px 70px;
@@ -168,12 +169,10 @@
   }
 }
 
-
 .catalog-button {
   width: 280px;
   height: 40px;
   text-transform: uppercase;
-
 
   @media (min-width: $tablet-width) {
     width: 250px;
