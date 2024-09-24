@@ -1,5 +1,5 @@
 .main-footer {
-  padding-top: 40px;
+  padding-top: 20px;
   background-color: $based-color-gray;
   margin: auto;
 
@@ -83,7 +83,6 @@
   text-align: left;
   margin-left: 20px;
 
-
   @media (min-width: $tablet-width) {
     margin-right: 23px;
     margin-top: 20px;
@@ -101,6 +100,7 @@
   .academy-logo::before {
     background-color: #68b738;
   }
+
 
   .logo-link {
     opacity: 0.6;
