@@ -21,6 +21,14 @@
   @media (min-width: $desktop-width) {
     position: relative;
     padding-bottom: 188px;
+    width: 100%;
+  }
+}
+
+.hero__background {
+  @media (min-width: $desktop-width) {
+    width: 1000px;
+    margin: 0 auto;
   }
 }
 
@@ -33,24 +41,24 @@
     background-position: 30%;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 720px;
+    width: 50%;
     height: 694px;
-    left: 50%;
+    right: 0;
     top: -120px;
   }
 }
 
 .hero::after {
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, #68b738 20%, hsla(97, 53%, 47%, 0.85) 92%, #68b738 99%);
+    background: linear-gradient(90deg, #68b738 20%, hsla(97, 53%, 47%, 0.85) 88%, #68b738 99%);
     content: "";
     z-index: 2;
     position: absolute;
     background-position: 30%;
     top: -130px;
-    left: 390px;
+    right: 0;
     background-size: contain;
-    width: 725px;
+    width: 50%;
     height: 706px;
   }
 }
@@ -72,7 +80,7 @@
     grid-template-columns: 414px auto;
     grid-template-rows: 150px 80px 54px;
     padding-top: 110px;
-    margin-left: -140px;
+    margin-left: -30px;
   }
 }
 
