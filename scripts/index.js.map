@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["source/scripts/index.js"],
-  "sourcesContent": ["const button = document.querySelector('.main-nav__toggle');\nbutton.onclick = function () {\n  document.querySelector('.main-nav__list').classList.toggle('main_nav-close');\n  button.classList.toggle('checked');\n};\n"],
-  "mappings": ";AAAA,IAAM,SAAS,SAAS,cAAc,mBAAmB;AACzD,OAAO,UAAU,WAAY;AAC3B,WAAS,cAAc,iBAAiB,EAAE,UAAU,OAAO,gBAAgB;AAC3E,SAAO,UAAU,OAAO,SAAS;AACnC;",
-  "names": []
-}
