@@ -22,18 +22,6 @@
   box-sizing: border-box;
 }
 
-.page {
-  height: 100%;
-}
-
-.page__body {
-  min-height: 100%;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  color: #444444;
-  background-color: #ffffff;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -47,23 +35,9 @@
   overflow: hidden;
 }
 
-.email::placeholder {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29.64px;
-  text-align: left;
-  color: #444444;
-  text-transform: uppercase;
-}
-
-input {
-  outline: none;
-}
-
 /* BLOCKS */
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -76,7 +50,7 @@ input {
 }
 
 .more-button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -101,14 +75,33 @@ input {
   background-color: #5eaa2f;
 }
 
+.button:focus {
+  background-color: #5eaa2f;
+}
+
 .button:active {
   opacity: 0.8;
 }
 
+.more-button:hover {
+  background-color: #ebebeb;
+}
+
+.more-button:active {
+  background-color: #ebebeb;
+}
+
+.page {
+  height: 100%;
+}
+
 .page__body {
-  min-width: 320px;
-  margin: 0;
+  min-height: 100%;
   padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #444444;
+  background-color: #ffffff;
 }
 
 .container {
@@ -174,6 +167,10 @@ input {
 }
 
 .main-header__logo-wrapper:hover {
+  opacity: 0.7;
+}
+
+.main-header__logo-wrapper:focus {
   opacity: 0.7;
 }
 
@@ -244,7 +241,14 @@ input {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
+}
+@media (max-width: 767px) {
+  .main-nav__list {
+    position: absolute;
+    z-index: 3;
+    background-color: #ffffff;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .main-nav__list {
@@ -273,7 +277,7 @@ input {
 .main-nav__list-item a {
   text-decoration: none;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
 }
@@ -288,7 +292,7 @@ input {
 @media (min-width: 1200px) {
   .main-nav__list-item a {
     color: #ffffff;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -365,8 +369,20 @@ input {
   background-image: url("../icons/stack.svg#x-icon");
 }
 
+.main-nav__toggle:hover {
+  background-color: none;
+}
+
+.main-nav__toggle:active {
+  background-color: none;
+}
+
+.main-nav__toggle:focus {
+  background-color: none;
+}
+
 @media (max-width: 767px) {
-  .main_nav-close {
+  .main-nav-close {
     display: none;
   }
 }
@@ -406,15 +422,20 @@ input {
   color: #111111;
 }
 
-@media (max-width: 785px) {
+@media (max-width: 767px) {
   .hero {
     max-width: 320px;
     margin: auto;
     position: relative;
-    background-image: url("../images/Rectangle%2017@2x.png"), url("../images/index-background-mobile@2x.png");
+    background-image: url("../images/Rectangle17@1x.png"), url("../images/index-background-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 320px 304px;
     padding-bottom: 4px;
+  }
+}
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/Rectangle17@2x.png"), url("../images/index-background-mobile@2x.png");
   }
 }
 @media (min-width: 768px) {
@@ -446,7 +467,7 @@ input {
   .hero::before {
     content: "";
     z-index: 2;
-    background-image: url("../images/index-background-desktop-1@2x.png");
+    background-image: url("../images/index-background-desktop-1@1x.png");
     position: absolute;
     background-position: 30%;
     background-repeat: no-repeat;
@@ -455,6 +476,11 @@ input {
     height: 694px;
     right: 0;
     top: -120px;
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero::before {
+    background-image: url("../images/index-background-desktop-1@2x.png");
   }
 }
 
@@ -473,7 +499,7 @@ input {
   }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 767px) {
   .hero__grid-container {
     display: grid;
     grid-template-areas: "main" "disk" "img" "butt";
@@ -495,13 +521,8 @@ input {
   width: 280px;
   height: 270px;
   margin-left: 20px;
-  margin-bottom: 7px;
-}
-@media (max-width: 785px) {
-  .hero__image {
-    grid-area: img;
-    margin-bottom: 0;
-  }
+  grid-area: img;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .hero__image {
@@ -523,15 +544,14 @@ input {
   }
 }
 
-.hero__img {
-  margin-bottom: 10px;
-}
 @media (min-width: 768px) {
   .hero__img {
     margin-top: -80px;
     margin-left: 55px;
     z-index: 0;
     margin-bottom: 0;
+    width: 709px;
+    height: 609px;
   }
 }
 @media (min-width: 1200px) {
@@ -542,7 +562,7 @@ input {
 }
 
 .hero__main-description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -550,11 +570,7 @@ input {
   color: #ffffff;
   margin: 0;
   padding-top: 27px;
-}
-@media (max-width: 785px) {
-  .hero__main-description {
-    grid-area: main;
-  }
+  grid-area: main;
 }
 @media (min-width: 768px) {
   .hero__main-description {
@@ -580,7 +596,7 @@ input {
   }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 767px) {
   .hero__wrapper {
     height: 285px;
     width: 302px;
@@ -593,7 +609,7 @@ input {
 }
 
 .hero__description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -604,7 +620,7 @@ input {
   padding-bottom: 25px;
   text-transform: uppercase;
 }
-@media (max-width: 785px) {
+@media (max-width: 767px) {
   .hero__description {
     grid-area: disk;
   }
@@ -644,7 +660,7 @@ input {
   text-transform: uppercase;
   margin-top: 7px;
 }
-@media (max-width: 785px) {
+@media (max-width: 767px) {
   .hero__button {
     grid-area: butt;
   }
@@ -669,7 +685,7 @@ input {
     display: block;
     position: static;
     margin: 0;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -757,7 +773,7 @@ input {
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -771,7 +787,7 @@ input {
 }
 @media (min-width: 768px) {
   .card__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -833,7 +849,7 @@ input {
 
 .card__link {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -845,7 +861,7 @@ input {
 @media (min-width: 768px) {
   .card__link {
     padding-top: 0;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 29.64px;
@@ -883,6 +899,10 @@ input {
 .card__link::after:is(:hover, :active, :focus)::after {
   transform: scaleX(1.35px);
   transform-origin: left;
+}
+
+.card__link:hover::after {
+  width: 50px;
 }
 
 .card::before {
@@ -1016,7 +1036,7 @@ input {
 
 .features h2 {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -1117,7 +1137,7 @@ input {
 @media (min-width: 768px) {
   .features__list-item-leaf::after {
     content: "1";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -1139,7 +1159,7 @@ input {
 @media (min-width: 768px) {
   .features__list-item-wash::after {
     content: "2";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -1161,7 +1181,7 @@ input {
 @media (min-width: 768px) {
   .features__list-item-eat::after {
     content: "3";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -1183,7 +1203,7 @@ input {
 @media (min-width: 768px) {
   .features__list-item-alarm::after {
     content: "4";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -1368,7 +1388,7 @@ input {
 }
 
 .instance__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -1462,8 +1482,8 @@ input {
   }
 }
 
-.list-item_main-discription {
-  font-family: "Oswald", sans-serif;
+.instance__item-main-discription {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -1475,7 +1495,7 @@ input {
   margin-top: 10px;
 }
 @media (min-width: 768px) {
-  .list-item_main-discription {
+  .instance__item-main-discription {
     border: 1px solid #cdcdcd;
     text-transform: uppercase;
     color: #000000;
@@ -1484,14 +1504,14 @@ input {
     text-align: center;
     width: 162px;
     padding-top: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 30px;
     padding-bottom: 27px;
   }
 }
 @media (min-width: 1200px) {
-  .list-item_main-discription {
-    font-family: "Oswald", sans-serif;
+  .instance__item-main-discription {
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 37px;
@@ -1534,7 +1554,7 @@ input {
 }
 
 .instance-discription-price {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1547,7 +1567,7 @@ input {
 }
 @media (min-width: 768px) {
   .instance-discription-price {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -1621,7 +1641,7 @@ input {
 }
 
 .contacts-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1762,6 +1782,10 @@ input {
   opacity: 0.6;
 }
 
+.main-footer__logo-text:focus {
+  opacity: 0.6;
+}
+
 .main-footer__logo-text:active {
   opacity: 0.3;
 }
@@ -1784,12 +1808,11 @@ input {
 @media (min-width: 768px) {
   .main-footer__academy-discription {
     margin-right: 23px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
 }
 @media (min-width: 1200px) {
   .main-footer__academy-discription {
-    margin-top: 5px;
     margin-left: 10px;
   }
 }
@@ -1804,12 +1827,20 @@ input {
   color: #68b738;
 }
 
+.academy-logo::before:focus {
+  background-color: #68b738;
+}
+
+.logo-link:focus {
+  color: #68b738;
+}
+
 .main-footer__inner:active {
   opacity: 0.3;
 }
 
 .footer-catalog {
-  padding-top: 65px;
+  padding-top: 70px;
 }
 
 .social-list {
@@ -1829,6 +1860,7 @@ input {
   .social-list {
     margin: auto;
     border: none;
+    padding-top: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -1885,6 +1917,10 @@ input {
   background-color: #68b738;
 }
 
+.social-list__item:focus::before {
+  background-color: #68b738;
+}
+
 .social-list__item:active {
   opacity: 0.3;
 }
@@ -1893,6 +1929,13 @@ input {
   display: block;
   width: 20px;
   height: 20px;
+}
+
+@media (min-width: 768px) {
+  .fat-cat-img {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1925,7 +1968,7 @@ input {
 }
 
 .products-catalog h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -1976,12 +2019,11 @@ input {
 }
 
 .catalog-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #222222;
-  grid-area: catalog-title;
   margin: 0;
   text-align: center;
 }
@@ -2036,7 +2078,7 @@ input {
 @media (min-width: 1200px) {
   .products-catalog__list-item {
     width: 245px;
-    gap: 10px;
+    gap: 5px;
   }
 }
 
@@ -2095,8 +2137,8 @@ input {
   }
 }
 
-button:focus {
-  border: solid 3px #000000;
+.button:focus {
+  background-color: #5eaa2f;
 }
 
 .weight-title {
@@ -2159,6 +2201,7 @@ button:focus {
 .products-catalog__picture {
   padding-top: 10px;
   padding-left: 35px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .products-catalog__picture {
@@ -2210,6 +2253,39 @@ button:focus {
     line-height: 24px;
     text-align: center;
     width: 140px;
+  }
+}
+
+.catalog-inner-link {
+  text-decoration: none;
+  cursor: pointer;
+  justify-self: center;
+  grid-area: catalog-title;
+}
+
+@media (min-width: 768px) {
+  .small-can-img {
+    width: 161px;
+    height: 172px;
+  }
+}
+@media (min-width: 1200px) {
+  .small-can-img {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+@media (min-width: 768px) {
+  .big-can-img {
+    width: 161px;
+    height: 172px;
+  }
+}
+@media (min-width: 1200px) {
+  .big-can-img {
+    width: 168px;
+    height: 206px;
   }
 }
 
@@ -2413,19 +2489,19 @@ button:focus {
   }
 }
 
-.additional-products_list-item {
+.additional-products__list-item {
   border-bottom: solid 1px #cdcdcd;
   padding-bottom: 17px;
   padding-top: 13px;
 }
 @media (min-width: 768px) {
-  .additional-products_list-item {
+  .additional-products__list-item {
     border: solid 1px #cdcdcd;
     padding: 10px 38px 30px;
   }
 }
 @media (min-width: 1200px) {
-  .additional-products_list-item {
+  .additional-products__list-item {
     display: flex;
     justify-content: space-between;
     padding: 7px 0 5px;
@@ -2435,7 +2511,7 @@ button:focus {
 }
 
 @media (min-width: 768px) {
-  .additional-products_list-item:not(:first-child) {
+  .additional-products__list-item:not(:first-child) {
     border-top: none;
   }
 }
@@ -2582,7 +2658,7 @@ button:focus {
 }
 
 .catalog-gift {
-  background-image: url("../images/catalog-present@2x.png");
+  background-image: url("../images/catalog-present@1x.png");
   background-position: 30% 60%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2590,6 +2666,11 @@ button:focus {
   width: 280px;
   min-height: 290px;
   position: relative;
+}
+@media (min-resolution: 2dppx) {
+  .catalog-gift {
+    background-image: url("../images/catalog-present@2x.png");
+  }
 }
 @media (min-width: 768px) {
   .catalog-gift {
@@ -2743,7 +2824,7 @@ button:focus {
 }
 
 .subscribe__discription {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2782,7 +2863,7 @@ button:focus {
 }
 
 .subscribe__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
@@ -2805,7 +2886,7 @@ button:focus {
   margin: 0;
 }
 
-.subscribe_title {
+.subscribe__title {
   padding-left: 20px;
   margin: 0;
   padding-top: 40px;
@@ -2813,7 +2894,7 @@ button:focus {
   width: 300px;
 }
 @media (min-width: 768px) {
-  .subscribe_title {
+  .subscribe__title {
     font-size: 32px;
     font-weight: 400;
     line-height: 32px;
@@ -2826,7 +2907,7 @@ button:focus {
   }
 }
 @media (min-width: 1200px) {
-  .subscribe_title {
+  .subscribe__title {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
@@ -2838,7 +2919,7 @@ button:focus {
 
 .email {
   width: 280px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 29.64px;
@@ -2866,6 +2947,20 @@ button:focus {
   border: solid 1px #000000;
 }
 
+.email::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.64px;
+  text-align: left;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+input {
+  outline: none;
+}
+
 .academy-logo {
   width: 27px;
   height: 34px;
@@ -2874,11 +2969,6 @@ button:focus {
   padding-top: 10px;
 }
 @media (min-width: 768px) {
-  .academy-logo {
-    padding-top: 15px;
-  }
-}
-@media (min-width: 1200px) {
   .academy-logo {
     padding-top: 0;
   }
