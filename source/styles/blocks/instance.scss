@@ -46,7 +46,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 570px 560px;
-    grid-template-rows: 350px 230px;
+    grid-template-rows: auto auto;
     gap: 20px;
     background: linear-gradient(#ffffff 138px, #f2f2f2 138px);
   }

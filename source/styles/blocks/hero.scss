@@ -78,7 +78,7 @@
     display: grid;
     gap: 0;
     grid-template-columns: 414px auto;
-    grid-template-rows: 150px 80px 54px;
+    grid-template-rows: 150px 80px auto;
     padding-top: 110px;
     margin-left: -30px;
   }
@@ -256,7 +256,6 @@
     line-height: 26px;
     text-align: center;
     width: 244px;
-    height: 54px;
     grid-row: 3 /4;
     grid-column: 1/2;
   }
