@@ -64,6 +64,10 @@
   opacity: 0.6;
 }
 
+.main-footer__logo-text:focus {
+  opacity: 0.6;
+}
+
 .main-footer__logo-text:active {
   opacity: 0.3;
 }
@@ -86,11 +90,11 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 5px;
+
     margin-left: 10px;
   }
 }
@@ -107,10 +111,19 @@
   }
 }
 
+.academy-logo::before:focus {
+  background-color: #68b738;
+}
+
+
+.logo-link:focus {
+  color: #68b738;
+}
+
 .main-footer__inner:active {
   opacity: 0.3;
 }
 
 .footer-catalog {
-  padding-top: 65px;
+  padding-top: 70px;
 }

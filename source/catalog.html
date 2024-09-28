@@ -11,6 +11,8 @@
   <link rel="icon" href="favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -35,7 +37,7 @@
       <nav class="main-nav ">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main_nav-close main-nav__catalog">
+          <ul class="main-nav__list main-nav-close main-nav__catalog">
             <li class="main-nav__list-item ">
               <a class="main-nav__catalog-list-item" href="index.html">Главная</a>
             </li>
@@ -55,13 +57,21 @@
           <h1>Каталог продукции</h1>
           <ul class="products-catalog__catalog-list">
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture small-can">
-                <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x">
-                <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x">
-                <img src="images/catalog-1-mobile@1x.png" srcset="images/catalog-1-mobile@2x.png" alt="продукт магазина" width="68" height="86">
-              </picture>
+              <a class="products-catalog__picture small-can" href="#">
+                <picture>
+
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.webp 1x, images/catalog-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-1-mobile@1x.webp 1x, images/catalog-1-mobile@2x.webp  2x">
+
+                  <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x">
+                  <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.png 1x, images/catalog-1-tablet@2x.png 2x">
+                  <img class="small-can-img" src="images/catalog-1-mobile@1x.png" srcset="images/catalog-1-mobile@2x.png" alt="продукт магазина" width="68" height="86">
+                </picture>
+              </a>
               <div class="products-catalog__inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 500 г</h3>
+                <a class="catalog-inner-link catalog-title" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 500 г</h3>
+                </a>
                 <p class="products-catalog__description weight-title">Масса</p>
                 <p class="weight products-catalog__description">500 г</p>
                 <p class="taste-title products-catalog__description">Вкус</p>
@@ -72,13 +82,20 @@
               <button class="catalog-button button" type="button">Заказать</button>
             </li>
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture big-can">
-                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-2-desktop@1x.png 1x, images/catalog-2-desktop@2x.png 2x">
-                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.png 1x, images/catalog-2-tablet@2x.png 2x">
-                <img src="images/catalog-2-mobile@1x.png" srcset="images/catalog-2-mobile@2x.png" alt="продукт магазина" width="84" height="100">
-              </picture>
+              <a class="products-catalog__picture big-can" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.webp 1x, images/catalog-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-1-mobile@1x.webp 2x, images/catalog-2-mobile@2x.webp  2x">
+
+                  <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-2-desktop@1x.png 1x, images/catalog-2-desktop@2x.png 2x">
+                  <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-2-tablet@1x.png 1x, images/catalog-2-tablet@2x.png 2x">
+                  <img class="big-can-img " src="images/catalog-2-mobile@1x.png" srcset="images/catalog-2-mobile@2x.png" alt="продукт магазина" width="84" height="100">
+                </picture>
+              </a>
               <div class="products-catalog__inner big-can-inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 1000 г</h3>
+                <a class="catalog-inner-link" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 1000 г</h3>
+                </a>
                 <p class="weight-title products-catalog__description">Масса</p>
                 <p class="weight products-catalog__description">1000 г</p>
                 <p class="taste-title products-catalog__description">Вкус</p>
@@ -89,13 +106,20 @@
               <button class="catalog-button button" type="button">Заказать</button>
             </li>
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture small-can">
-                <source width="163" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x">
-                <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x">
-                <img src="images/catalog-3-mobile@1x.png" srcset="images/catalog-3-mobile@2x.png" alt="продукт магазина" width="68" height="86">
-              </picture>
+              <a class="products-catalog__picture small-can" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.webp 1x, images/catalog-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-3-mobile@1x.webp 1x, images/catalog-3-mobile@2x.webp  2x">
+
+                  <source width="163" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x">
+                  <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-3-tablet@1x.png 1x, images/catalog-3-tablet@2x.png 2x">
+                  <img class="small-can-img" src="images/catalog-3-mobile@1x.png" srcset="images/catalog-3-mobile@2x.png" alt="продукт магазина" width="68" height="86">
+                </picture>
+              </a>
               <div class="products-catalog__inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 500 г</h3>
+                <a class="catalog-inner-link" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 500 г</h3>
+                </a>
                 <p class="weight-title products-catalog__description">Масса</p>
                 <p class="weight products-catalog__description">500 г</p>
                 <p class="taste-title products-catalog__description">Вкус</p>
@@ -106,13 +130,20 @@
               <button class="catalog-button button" type="button">Заказать</button>
             </li>
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture big-can">
-                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-4-desktop@1x.png 1x, images/catalog-4-desktop@2x.png 2x">
-                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.png 1x, images/catalog-4-tablet@2x.png 2x">
-                <img src="images/catalog-4-mobile@1x.png" srcset="images/catalog-4-mobile@2x.png" alt="продукт магазина" width="84" height="100">
-              </picture>
+              <a class="products-catalog__picture big-can" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.webp 1x, images/catalog-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-4-mobile@1x.webp 1x, images/catalog-4-mobile@2x.webp  2x">
+
+                  <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-4-desktop@1x.png 1x, images/catalog-4-desktop@2x.png 2x">
+                  <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-4-tablet@1x.png 1x, images/catalog-4-tablet@2x.png 2x">
+                  <img class="big-can-img" src="images/catalog-4-mobile@1x.png" srcset="images/catalog-4-mobile@2x.png" alt="продукт магазина" width="84" height="100">
+                </picture>
+              </a>
               <div class="products-catalog__inner big-can-inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 1000 г</h3>
+                <a class="catalog-inner-link" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy PRO 1000 г</h3>
+                </a>
                 <p class="weight-title products-catalog__description">Масса</p>
                 <p class="weight products-catalog__description">1000 г</p>
                 <p class="taste-title products-catalog__description">Вкус</p>
@@ -123,13 +154,20 @@
               <button class="catalog-button button" type="button">Заказать</button>
             </li>
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture small-can">
-                <source width="163" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x">
-                <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x">
-                <img src="images/catalog-5-mobile@1x.png" srcset="images/catalog-5-mobile@2x.png" alt="продукт магазина" width="68" height="86">
-              </picture>
+              <a class="products-catalog__picture small-can" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.webp 1x, images/catalog-5-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-5-mobile@1x.webp 1x, images/catalog-5-mobile@2x.webp  2x">
+
+                  <source width="163" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x">
+                  <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-5-tablet@1x.png 1x, images/catalog-5-tablet@2x.png 2x">
+                  <img class="small-can-img" src="images/catalog-5-mobile@1x.png" srcset="images/catalog-5-mobile@2x.png" alt="продукт магазина" width="68" height="86">
+                </picture>
+              </a>
               <div class="products-catalog__inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 500 г</h3>
+                <a class="catalog-inner-link" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 500 г</h3>
+                </a>
                 <p class="weight-title products-catalog__description">Масса</p>
                 <p class="weight products-catalog__description">500 г</p>
                 <p class="taste-title products-catalog__description">Гречка</p>
@@ -140,13 +178,20 @@
               <button class="catalog-button button" type="button">Заказать</button>
             </li>
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture big-can">
-                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-6-desktop@1x.png 1x, images/catalog-6-desktop@2x.png 2x">
-                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.png 1x, images/catalog-6-tablet@2x.png 2x">
-                <img src="images/catalog-6-mobile@1x.png" srcset="images/catalog-6-mobile@2x.png" alt="продукт магазина" width="84" height="100">
-              </picture>
+              <a class="products-catalog__picture big-can" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.webp 1x, images/catalog-6-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-6-mobile@1x.webp 1x, images/catalog-6-mobile@2x.webp  2x">
+
+                  <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-6-desktop@1x.png 1x, images/catalog-6-desktop@2x.png 2x">
+                  <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog-6-tablet@1x.png 1x, images/catalog-6-tablet@2x.png 2x">
+                  <img class="big-can-img" src="images/catalog-6-mobile@1x.png" srcset="images/catalog-6-mobile@2x.png" alt="продукт магазина" width="84" height="100">
+                </picture>
+              </a>
               <div class="products-catalog__inner big-can-inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 1000 г</h3>
+                <a class="catalog-inner-link" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 1000 г</h3>
+                </a>
                 <p class="weight-title products-catalog__description">Масса</p>
                 <p class="weight products-catalog__description">1000 г</p>
                 <p class="taste-title products-catalog__description">Вкус</p>
@@ -157,13 +202,20 @@
               <button class="catalog-button button" type="button">Заказать</button>
             </li>
             <li class="products-catalog__list-item">
-              <picture class="products-catalog__picture small-can">
-                <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x">
-                <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x">
-                <img src="images/catalog-7s-mobile@1x.png" srcset="images/catalog-7-mobile@2x.png" alt="продукт магазина" width="68" height="84">
-              </picture>
+              <a class="products-catalog__picture small-can" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-1-tablet@1x.webp 1x, images/catalog-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog-1-mobile@1x.webp 1x, images/catalog-1-mobile@2x.webp  2x">
+
+                  <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x">
+                  <source width="163" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-7-tablet@1x.png 1x, images/catalog-7-tablet@2x.png 2x">
+                  <img class="small-can-img" src="images/catalog-7s-mobile@1x.png" srcset="images/catalog-7-mobile@2x.png" alt="продукт магазина" width="68" height="84">
+                </picture>
+              </a>
               <div class="products-catalog__inner">
-                <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 500 г</h3>
+                <a class="catalog-inner-link" href="#">
+                  <h3 class="products-catalog__item-title catalog-title">Cat Energy Slim 500 г</h3>
+                </a>
                 <p class="weight-title products-catalog__description">Масса</p>
                 <p class="weight products-catalog__description">500 г</p>
                 <p class="taste-title products-catalog__description">Вкус</p>
@@ -185,7 +237,7 @@
         <div class="additional-products__position">
           <h2 class="additional-products__title main-catalog-title">Дополнительные товары</h2>
           <ul class="additional-products__list">
-            <li class="additional-products_list-item">
+            <li class="additional-products__list-item">
               <div class="additional-wrapper">
                 <h3 class=" additional-products_item-title catalog-title">Сахарозаменитель</h3>
                 <div class="additional-products__inner">
@@ -195,7 +247,7 @@
               </div>
               <button class="additional-button button" type="button">Заказать</button>
             </li>
-            <li class="additional-products_list-item">
+            <li class="additional-products__list-item">
               <div class="additional-wrapper">
                 <h3 class=" additional-products_item-title catalog-title">Питьевая вода</h3>
                 <div class="additional-products__inner">
@@ -205,7 +257,7 @@
               </div>
               <button class="additional-button button" type="button">Заказать</button>
             </li>
-            <li class="additional-products_list-item">
+            <li class="additional-products__list-item">
               <div class="additional-wrapper">
                 <h3 class=" additional-products_item-title catalog-title">Молоко</h3>
                 <div class="additional-products__inner">
@@ -215,7 +267,7 @@
               </div>
               <button class="additional-button button" type="button">Заказать</button>
             </li>
-            <li class="additional-products_list-item">
+            <li class="additional-products__list-item">
               <div class="additional-wrapper">
                 <h3 class=" additional-products_item-title catalog-title">Витамины</h3>
                 <div class="additional-products__inner">
@@ -235,7 +287,7 @@
       </section>
       <section class="subscribe">
         <div class="subscribe__position">
-          <h2 class="subscribe_title main-catalog-title">Акции и новинки</h2>
+          <h2 class="subscribe__title main-catalog-title">Акции и новинки</h2>
           <p class="subscribe__discription">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>

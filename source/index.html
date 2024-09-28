@@ -11,6 +11,8 @@
   <link rel="icon" href="favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -19,7 +21,7 @@
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo-image" href="index.html">
           <picture>
-            <source width="70" height="59" type="image/png" media="(min-width: 1440px)" srcset="images/fox-desktop.svg">
+            <source width="70" height="59" type="image/png" media="(min-width: 1200px)" srcset="images/fox-desktop.svg">
             <source width="60" height="50" type="image/png" media="(min-width: 768px)" srcset="images/fox-tablet.svg">
             <img class="fox-logotype" src="images/fox-mobile" srcset="images/fox-mobile.svg" alt="Пример продукции" width="33" height="38">
           </picture>
@@ -35,7 +37,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="открыть меню"></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main_nav-close">
+          <ul class="main-nav__list main-nav-close">
             <li class="main-nav__list-item main-nav__list-item--active">
               <a href="#">Главная</a>
             </li>
@@ -60,6 +62,11 @@
             <button class="hero__button button" type="button">Подобрать программу</button>
 
             <picture class="hero__image">
+
+              <source type="image/webp" media="(min-width: 1200px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/index-can-tablet-1@1x.webp 1x, images/index-can-tablet-1@2x.webp 2x">
+              <source type="image/webp" srcset="images/index-can-mobile-1@1x.png 1x, images/index-can-mobile-1@2x.png 2x">
+
               <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
               <source width="700" height="600" type="image/png" media="(min-width: 768px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
               <img class="hero__img" src="images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png" alt="Пример продукции" width="280" height="275">
@@ -113,11 +120,11 @@
               <div class="instance__inner">
                 <ul class="instance__list">
                   <li class="instance__list-item">
-                    <h3 class="list-item_main-discription">5 кг</h3>
+                    <h3 class="instance__item-main-discription">5 кг</h3>
                     <p class="instance__list-discription">Снижение веса</p>
                   </li>
                   <li class="instance__list-item">
-                    <h3 class="list-item_main-discription">60 дней</h3>
+                    <h3 class="instance__item-main-discription">60 дней</h3>
                     <p class="instance__list-discription">Затрачено времени</p>
                   </li>
                 </ul>
@@ -128,19 +135,28 @@
                   <div class="slider__wrapper">
                     <div class="slider__before">
                       <picture class="slider__fat-cat">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="images/fat-cat-desktop@1x.webp 1x, images/fat-cat-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="images/fat-cat-desktop@1x.webp 1x, images/fat-cat-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="images/fat-cat-mobile@1x.webp 1x, images/fat-cat-mobile@2x.webp  2x">
+
                         <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@1x.png 2x">
                         <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@1x.png 2x">
-                        <img src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
+                        <img class="fat-cat-img" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
                       </picture>
                     </div>
                     <div class="slider__after">
                       <picture class="slider__fit-cat">
+
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="images/thin-cat-desktop@1x.webp 1x, images/thin-cat-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="images/thin-cat-desktop@1x.webp 1x, images/thin-cat-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="images/thin-cat-mobile@1x.webp 1x, images/thin-cat-mobile@2x.webp  2x">
+
                         <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@1x.png 2x">
                         <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/thin-cat-desktop@1x.png 1x, images/thin-cat-desktop@1x.png 2x">
-                        <img src="images/thin-cat-mobile@1x.png" srcset="images/thin-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
+                        <img class="fat-cat-img" src="images/thin-cat-mobile@1x.png" srcset="images/thin-cat-mobile@2x.png" alt="упитанный кот" width="280" height="256">
                       </picture>
                     </div>
-                    <button class="slider__button" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
+                    <button class="slider__button" aria-label="ползунок слайдера" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
                   </div>
                 </div>
               </div>

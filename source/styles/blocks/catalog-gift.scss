@@ -1,5 +1,5 @@
 .catalog-gift {
-  background-image: url("../../images/catalog-present@2x.png");
+  background-image: url("../../images/catalog-present@1x.png");
   background-position: 30% 60%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,6 +7,11 @@
   width: 280px;
   min-height: 290px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/catalog-present@2x.png");
+  }
+
 
   @media (min-width: $tablet-width) {
     width: 707px;

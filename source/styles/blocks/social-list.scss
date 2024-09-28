@@ -15,6 +15,7 @@
   @media (min-width: $tablet-width) {
     margin: auto;
     border: none;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,6 +71,11 @@
   background-color: #68b738;
 }
 
+.social-list__item:focus::before {
+  background-color: #68b738;
+}
+
+
 .social-list__item:active {
   opacity: 0.3;
 }
@@ -78,4 +84,11 @@
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.fat-cat-img {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }

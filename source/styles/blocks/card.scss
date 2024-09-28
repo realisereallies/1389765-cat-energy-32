@@ -21,7 +21,7 @@
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -34,7 +34,7 @@
   padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -92,7 +92,7 @@
 
 .card__link {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -103,7 +103,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 29.64px;
@@ -141,6 +141,11 @@
   transform: scaleX(1.35px);
   transform-origin: left;
 }
+
+.card__link:hover::after {
+  width: 50px;
+}
+
 
 .card::before {
   content: "";
