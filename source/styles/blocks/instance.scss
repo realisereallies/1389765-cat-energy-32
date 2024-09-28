@@ -46,7 +46,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 570px 560px;
-    grid-template-rows: 350px 230px;
+    grid-template-rows: auto auto;
     gap: 20px;
     background: linear-gradient(#ffffff 138px, #f2f2f2 138px);
   }
@@ -67,8 +67,7 @@
   color: $based-color-black;
   padding-top: 25px;
   padding-bottom: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
@@ -263,8 +262,4 @@
     background-color: #f2f2f2;
     padding-bottom: 50px;
   }
-}
-
-.instance__title {
-  margin: auto;
 }
