@@ -49,6 +49,10 @@
   opacity: 0.7;
 }
 
+.main-header__logo-wrapper:focus {
+  opacity: 0.7;
+}
+
 .main-header__logo-wrapper:active {
   opacity: 0.3;
 }

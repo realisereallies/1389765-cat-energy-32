@@ -49,7 +49,7 @@
 
 .features h2 {
   color: $based-color-black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -148,7 +148,7 @@
 .features__list-item-leaf::after {
   @media (min-width: $tablet-width) {
     content: "1";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -170,7 +170,7 @@
 .features__list-item-wash::after {
   @media (min-width: $tablet-width) {
     content: "2";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -192,7 +192,7 @@
 .features__list-item-eat::after {
   @media (min-width: $tablet-width) {
     content: "3";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
@@ -214,7 +214,7 @@
 .features__list-item-alarm::after {
   @media (min-width: $tablet-width) {
     content: "4";
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;

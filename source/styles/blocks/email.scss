@@ -1,6 +1,6 @@
 .email {
   width: 280px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 29.64px;
@@ -24,4 +24,18 @@
 
 .email:focus {
   border: solid 1px  #000000;
+}
+
+.email::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.64px;
+  text-align: left;
+  color: $based-color-text;
+  text-transform: uppercase;
+}
+
+input {
+  outline: none;
 }

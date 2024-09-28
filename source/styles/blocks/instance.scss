@@ -59,7 +59,7 @@
 }
 
 .instance__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -148,8 +148,8 @@
   }
 }
 
-.list-item_main-discription {
-  font-family: "Oswald", sans-serif;
+.instance__item-main-discription {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -169,13 +169,13 @@
     text-align: center;
     width: 162px;
     padding-top: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 30px;
     padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 37px;
@@ -216,7 +216,7 @@
 }
 
 .instance-discription-price {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -229,7 +229,7 @@
 
 
   @media (min-width: $tablet-width) {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;

@@ -21,7 +21,7 @@
 
 
 .products-catalog h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -68,12 +68,11 @@
 }
 
 .catalog-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #222222;
-  grid-area: catalog-title;
   margin: 0;
   text-align: center;
 
@@ -124,7 +123,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    gap: 10px;
+    gap: 5px;
   }
 }
 
@@ -185,8 +184,8 @@
   }
 }
 
-button:focus {
-  border: solid 3px #000000;
+.button:focus {
+  background-color: #5eaa2f;
 }
 
 
@@ -244,6 +243,7 @@ button:focus {
 .products-catalog__picture {
   padding-top: 10px;
   padding-left: 35px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin: auto;
@@ -290,5 +290,36 @@ button:focus {
     line-height: 24px;
     text-align: center;
     width: 140px;
+  }
+}
+
+.catalog-inner-link {
+  text-decoration: none;
+  cursor: pointer;
+  justify-self: center;
+  grid-area: catalog-title;
+}
+
+.small-can-img {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.big-can-img {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    height: 206px;
   }
 }
