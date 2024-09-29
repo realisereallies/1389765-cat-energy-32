@@ -111,11 +111,20 @@
 
 .logo-link:focus {
   background-color: #444444;
+}
 
 .main-footer__inner:active {
   opacity: 0.3;
 }
 
 .footer-catalog {
-  padding-top: 70px;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
 }
