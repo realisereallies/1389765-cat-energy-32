@@ -81,7 +81,7 @@
 .main-footer__academy-discription {
   margin-right: 140px;
   cursor: pointer;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -99,14 +99,8 @@
 }
 
 .main-footer__inner:hover {
-  color: #68b738;
-
   .academy-logo::before {
     background-color: #68b738;
-  }
-
-  .logo-link {
-    color: #68b738;
   }
 }
 
@@ -116,8 +110,7 @@
 
 
 .logo-link:focus {
-  color: #68b738;
-}
+  background-color: #444444;
 
 .main-footer__inner:active {
   opacity: 0.3;

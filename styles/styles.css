@@ -30,7 +30,7 @@
 .page__body {
   min-height: 100%;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   color: #444444;
   background-color: #ffffff;
 }
@@ -857,7 +857,7 @@ input {
 }
 
 .card__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1118,7 +1118,7 @@ input {
 }
 
 .features__item-description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1496,7 +1496,7 @@ input {
 }
 
 .instance__discription {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1604,7 +1604,7 @@ input {
 }
 
 .instance__list-discription {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -1753,7 +1753,7 @@ input {
 }
 
 .contacts-discription {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1893,7 +1893,7 @@ input {
 .main-footer__academy-discription {
   margin-right: 140px;
   cursor: pointer;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -2119,7 +2119,7 @@ input {
 }
 
 .products-catalog__description {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -2135,7 +2135,7 @@ input {
 }
 
 .products-catalog__more-discription {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -2602,7 +2602,7 @@ button:focus {
 }
 
 .additional-products__weight {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -2611,7 +2611,7 @@ button:focus {
 @media (min-width: 768px) {
   .additional-products__weight {
     border: none;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -2620,7 +2620,7 @@ button:focus {
 }
 
 .additional-products__price {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -2629,7 +2629,7 @@ button:focus {
 @media (min-width: 768px) {
   .additional-products__price {
     border: none;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -2760,7 +2760,7 @@ button:focus {
 }
 
 .catalog-gift__discription {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
