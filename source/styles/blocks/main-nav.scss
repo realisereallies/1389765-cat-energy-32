@@ -26,8 +26,6 @@
   padding: 0;
 
   @media (max-width: 767px) {
-    position: absolute;
-    z-index: 3;
     background-color: #ffffff;
     width: 100%;
   }
@@ -127,7 +125,6 @@
 }
 
 .main-nav__toggle {
-  background-image: url("../../icons/stack.svg#icon-menue");
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: contain;
@@ -143,10 +140,6 @@
   z-index: 1;
 }
 
-
-.checked {
-  background-image: url("../../icons/stack.svg#x-icon");
-}
 
 .main-nav__toggle:hover {
   background-color: none;
@@ -188,7 +181,6 @@
 
 .main-nav__catalog {
   color: #111111;
-  position: relative;
 
   @media (min-width: $desktop-width) {
     padding-top: 8px;
