@@ -1769,7 +1769,7 @@
 }
 
 .contacts__container {
-  background-image: url("../images/map-mobile@2x.png");
+  background-image: url("../images/map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -1784,7 +1784,7 @@
 }
 @media (min-width: 768px) {
   .contacts__container {
-    background-image: url("../images/location-tablet@2x.png");
+    background-image: url("../images/location-tablet@1x.png");
     height: 400px;
   }
 }
@@ -1795,12 +1795,12 @@
 }
 @media (min-width: 1200px) {
   .contacts__container {
-    background-image: url("../images/location-deskop@2x.png");
+    background-image: url("../images/location-deskop@1x.png");
   }
 }
 @media (min-width: 1200px) and (min-resolution: 2dppx) {
   .contacts__container {
-    background-image: url("../images/location-deskop@1x.webp");
+    background-image: url("../images/location-deskop@2x.webp");
   }
 }
 
@@ -1840,7 +1840,8 @@
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1220px;
+    width: 1240px;
+    padding-right: 20px;
   }
 }
 
@@ -1900,12 +1901,13 @@
 @media (min-width: 768px) {
   .main-footer__academy-discription {
     margin-right: 23px;
-    margin-top: 5px;
+    margin-top: 12px;
   }
 }
 @media (min-width: 1200px) {
   .main-footer__academy-discription {
     margin-left: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -1956,7 +1958,7 @@
   .social-list {
     margin: auto;
     border: none;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -2441,6 +2443,7 @@
   padding-top: 25px;
   text-transform: uppercase;
   padding-bottom: 8px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .more-title {
@@ -3017,7 +3020,7 @@
     line-height: 40px;
     padding-top: 30px;
     padding-left: 0;
-    padding-bottom: 75px;
+    padding-bottom: 70px;
   }
 }
 
@@ -3075,6 +3078,12 @@ input {
 @media (min-width: 768px) {
   .academy-logo {
     padding-top: 0;
+    margin-top: 7px;
+  }
+}
+@media (min-width: 1200px) {
+  .academy-logo {
+    margin-top: 0;
   }
 }
 
