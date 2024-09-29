@@ -330,3 +330,34 @@
     height: 206px;
   }
 }
+
+.catalog-inner-link {
+  text-decoration: none;
+  cursor: pointer;
+  justify-self: center;
+  grid-area: catalog-title;
+}
+
+.small-can-img {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.big-can-img {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+    height: 206px;
+  }
+}
